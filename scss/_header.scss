@@ -1,3 +1,5 @@
+// Header-top
+
 .header-top {
 
    background-color: #000;
@@ -7,7 +9,6 @@
       justify-content: space-between;
       align-items: center;
       font-family: 'Arial', sans-serif;
-      font-size: 11px;
       line-height: 30px;
       letter-spacing: -0.5px;
       color: #ffffff;
@@ -16,46 +17,99 @@
       &-right {
          display: flex;
          justify-content: space-between;
-        
+
       }
    }
 
-   &__phone {
-      
-   }
+   &__phone {}
 
-   &__phone-label {
-   }
+   &__phone-label {}
 
-   &__phone-link {
-   }
+   &__phone-link {}
 
    &__currency {
       padding: 0 30px 0 13px;
       border-left: 1px solid #444444;
-      
    }
 
-   &__currency-item {
-   }
+   &__currency-item {}
 
-   &__account {
-      padding: 0 13px 0 38px;
-      border-left: 1px solid #444444;
-   }
+   &__account {}
 
    &__account-link {
+      position: relative;
+      display: inline-block;
+      padding: 0 13px 0 38px;
+      border-left: 1px solid #444444;
+
+      &::before {
+         position: absolute;
+         left: 19px;
+         font-family: 'icomoon' !important;
+         content: "\e903";
+      }
    }
 
    &__search {
-      padding: 0 7px 0 7px;
+      padding: 0 9px 0 9px;
       border-left: 1px solid #444444;
       border-right: 1px solid #444444;
    }
 
    &__search-link {
+      display: inline-block;
+      vertical-align: middle;
+      transform: scale(-1,1);
    }
 
-   &__search-icon {
+}
+
+// Header-top
+
+// Header-main
+
+.header-main {}
+
+.logo {
+
+   &__link {}
+}
+
+.main-navigation {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 45px 0;
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      letter-spacing: -0.5px;
+      color: #000000;
+   }
+
+   &__item {
+      
+   }
+   &__item + &__item {
+      margin-left: 42px;
+   }
+
+   &__item-link {
+      position: relative;
+      padding-right: 12px;
+      &::after {
+         position: absolute;
+         content: "";
+         right: -8px;
+         top: 7px;
+         border: 6px solid transparent;
+         border-top-color: black;
+      }
    }
 }
+
+
+// Header-main

@@ -27,6 +27,17 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
 .container {
   max-width: 1000px;
   padding: 0 15px;
@@ -48,7 +59,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Arial', sans-serif;
-  font-size: 11px;
   line-height: 30px;
   letter-spacing: -0.5px;
   color: #ffffff;
@@ -69,13 +79,75 @@ a {
   border-left: 1px solid #444444;
 }
 
-.header-top__account {
+.header-top__account-link {
+  position: relative;
+  display: inline-block;
   padding: 0 13px 0 38px;
   border-left: 1px solid #444444;
 }
 
+.header-top__account-link::before {
+  position: absolute;
+  left: 19px;
+  font-family: 'icomoon' !important;
+  content: "\e903";
+}
+
 .header-top__search {
-  padding: 0 7px 0 7px;
+  padding: 0 9px 0 9px;
   border-left: 1px solid #444444;
   border-right: 1px solid #444444;
+}
+
+.header-top__search-link {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 45px 0;
+}
+
+.main-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+
+.main-navigation__item + .main-navigation__item {
+  margin-left: 42px;
+}
+
+.main-navigation__item-link {
+  position: relative;
+  padding-right: 12px;
+}
+
+.main-navigation__item-link::after {
+  position: absolute;
+  content: "";
+  right: -8px;
+  top: 7px;
+  border: 6px solid transparent;
+  border-top-color: black;
 }
