@@ -1,0 +1,61 @@
+.header-top {
+
+   background-color: #000;
+
+   &__panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+      font-size: 11px;
+      line-height: 30px;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      text-transform: uppercase;
+
+      &-right {
+         display: flex;
+         justify-content: space-between;
+        
+      }
+   }
+
+   &__phone {
+      
+   }
+
+   &__phone-label {
+   }
+
+   &__phone-link {
+   }
+
+   &__currency {
+      padding: 0 30px 0 13px;
+      border-left: 1px solid #444444;
+      
+   }
+
+   &__currency-item {
+   }
+
+   &__account {
+      padding: 0 13px 0 38px;
+      border-left: 1px solid #444444;
+   }
+
+   &__account-link {
+   }
+
+   &__search {
+      padding: 0 7px 0 7px;
+      border-left: 1px solid #444444;
+      border-right: 1px solid #444444;
+   }
+
+   &__search-link {
+   }
+
+   &__search-icon {
+   }
+}
