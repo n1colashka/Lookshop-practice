@@ -1,8 +1,11 @@
 html {
    box-sizing: border-box;
+   overflow-x: hidden;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
    box-sizing: inherit;
 }
 
@@ -26,4 +29,17 @@ body {
    max-width: 1000px;
    padding: 0 15px;
    margin: 0 auto;
+}
+
+.list {
+   position: relative;
+
+   &::after {
+      position: absolute;
+      content: "";
+      right: 5px;
+      top: 17px;
+      border: 5px solid transparent;
+      border-top-color: black;
+   }
 }

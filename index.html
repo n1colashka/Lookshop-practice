@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,7 +28,12 @@
                     </div>
                     <div class="header-top__panel-right">
                         <div class="header-top__currency">
-                            <div class="header-top__currency-item">$ US</div>
+                            <ul class="header-top__currency-list">
+                                <a href="#" class="header-top__currency-item current list">$ US</a>
+                                <a href="#" class="header-top__currency-item">€ EU</a>
+                                <a href="#" class="header-top__currency-item">£ EA</a>
+                                <a href="#" class="header-top__currency-item">₽ RU</a>
+                            </ul>
                         </div>
                         <div class="header-top__account">
                             <a class="header-top__account-link" href="#">My account</a>
@@ -45,7 +52,6 @@
 
             <div class="container">
 
-
                 <nav class="main-navigation">
                     <div class="logo">
                         <a class="logo__link" href="index.html">
@@ -56,22 +62,140 @@
 
                         <li class="main-navigation__item">
                             <a class="main-navigation__item-link" href="#">new</a>
+                            <ul class="main-navigation__sublist">
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">jeans</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">sweaters</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">tanks</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">t-shirts</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">shorts</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="main-navigation__item">
                             <a class="main-navigation__item-link" href="#">designers</a>
+                            <ul class="main-navigation__sublist">
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">lamoda</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">gucci</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">lStyle</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">nikki</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">august</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="main-navigation__item">
                             <a class="main-navigation__item-link" href="#">women</a>
+                            <ul class="main-navigation__sublist">
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">jeans</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">sweaters</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">tanks</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">skirts</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">shorts</a>
+                                </li>
+                            </ul>
+
+                            <ul class="main-navigation__sublist">
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">jeans</a>
+                                </li>
+                                <li class="main-navigation__sublist-item list">
+                                    <a class="main-navigation__sublist-link" href="#">sweaters</a>
+
+                                    <ul class="main-navigation__extra-sublist">
+                                        <li class="main-navigation__extra-sublist-item">
+                                            <a class="main-navigation__extra-sublist-link" href="#">jeans</a>
+                                        </li>
+                                        <li class="main-navigation__extra-sublist-item">
+                                            <a class="main-navigation__extra-sublist-link" href="#">sweaters</a>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">tanks</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">t-shirts</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">shorts</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="main-navigation__item">
                             <a class="main-navigation__item-link" href="#">men</a>
+                            <ul class="main-navigation__sublist">
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">jeans</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">sweaters</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">tanks</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">t-shirts</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">shorts</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="main-navigation__item">
                             <a class="main-navigation__item-link" href="#">clearence</a>
+                            <ul class="main-navigation__sublist">
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">jeans</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">sweaters</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">tanks</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">t-shirts</a>
+                                </li>
+                                <li class="main-navigation__sublist-item">
+                                    <a class="main-navigation__sublist-link" href="#">shorts</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="main-navigation__item">
-                            <input type="text" name="cart" id="cart" placeholder="Your cart"> <br>
-                            <input type="text" name="cart" id="cart">
+                            <div class="main-navigation__cart">
+                                <input type="text" name="cart" id="cart" placeholder="Your cart">
+                            </div>
+                            <div class="main-navigation__cart-count">
+                                <input type="text" name="cart-count" id="cart-count" placeholder="0 items | $ 0"
+                                    disabled>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -82,6 +206,69 @@
 
     </header>
 
+    <section class="main-slider">
+
+        <div class="slider">
+
+            <div class="slider__item" style="background-image: url(img/slider-item-1.png);">
+                <div class="container">
+                    <div class="slider__text">
+                        <div class="slider__text-top">Crazy</div>
+                        <h1 class="slider__text-head">Crazy summer</h1>
+                        <h2 class="slider__text-subhead">Woman collection</h2>
+                        <a class="slider__text-btn" href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item" style="background-image: url(img/slider-item-1.png);">
+                <div class="container">
+                    <div class="slider__text">
+                        <div class="slider__text-top">Crazy</div>
+                        <h1 class="slider__text-head">Crazy summer</h1>
+                        <h2 class="slider__text-subhead">Woman collection</h2>
+                        <a class="slider__text-btn" href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item" style="background-image: url(img/slider-item-1.png);">
+                <div class="container">
+                    <div class="slider__text">
+                        <div class="slider__text-top">Crazy</div>
+                        <h1 class="slider__text-head">Crazy summer</h1>
+                        <h2 class="slider__text-subhead">Woman collection</h2>
+                        <a class="slider__text-btn" href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item" style="background-image: url(img/slider-item-1.png);">
+                <div class="container">
+                    <div class="slider__text">
+                        <div class="slider__text-top">Crazy</div>
+                        <h1 class="slider__text-head">Crazy summer</h1>
+                        <h2 class="slider__text-subhead">Woman collection</h2>
+                        <a class="slider__text-btn" href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item" style="background-image: url(img/slider-item-1.png);">
+                <div class="container">
+                    <div class="slider__text">
+                        <div class="slider__text-top">Crazy</div>
+                        <h1 class="slider__text-head">Crazy summer</h1>
+                        <h2 class="slider__text-subhead">Woman collection</h2>
+                        <a class="slider__text-btn" href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

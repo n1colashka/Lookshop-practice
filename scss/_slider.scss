@@ -1,0 +1,218 @@
+// Main slider
+
+.main-slider {
+   background-color: #fff;
+   padding-bottom: 20px;
+}
+
+.slider {
+   position: relative;
+
+   &__item {
+      position: relative;
+      min-height: 440px;
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-color: rgb(246, 243, 236);
+      outline: none;
+
+      &::after {
+         position: absolute;
+         content: "";
+         bottom: 0;
+         left: 0;
+         background-color: rgba(0, 0, 0, .2);
+         height: 7px;
+         width: 100%;
+      }
+   }
+
+   &__text {
+      max-width: 450px;
+      color: #78645d;
+      text-align: center;
+   }
+
+   &__text-top {
+      display: inline-block;
+      position: relative;
+      padding-top: 40px;
+      font-family: 'Luxury Royale JF', serif;
+      font-size: 36px;
+
+      &::before {
+         position: absolute;
+         content: "";
+         width: 75px;
+         height: 1px;
+         right: 88px;
+         bottom: 15px;
+         background-color: #78645d;
+      }
+
+      &::after {
+         position: absolute;
+         content: "";
+         width: 75px;
+         height: 1px;
+         left: 88px;
+         bottom: 15px;
+         background-color: #78645d;
+      }
+   }
+
+   &__text-head {
+      position: relative;
+      display: inline-block;
+      font-family: 'HelveticaNeueLTStd HvCn', sans-serif;
+      text-transform: uppercase;
+      font-size: 96px;
+      line-height: 72px;
+      margin: 5px;
+      padding: 0;
+      padding-bottom: 5px;
+      background-image: linear-gradient(to bottom right, rgb(217, 157, 207), rgb(224, 163, 193), rgb(230, 169, 178), rgb(237, 175, 164), rgb(243, 181, 149), rgb(250, 187, 135), rgb(249, 186, 128), rgb(248, 186, 120), rgb(248, 185, 113), rgb(247, 184, 105), rgb(246, 184, 98), rgb(245, 183, 90));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+
+      &::before {
+         position: absolute;
+         content: "";
+         width: 350px;
+         height: 4px;
+         left: 45px;
+         bottom: -5px;
+         background-color: #78645d;
+      }
+
+      &::after {
+         position: absolute;
+         content: "";
+         width: 350px;
+         height: 1px;
+         left: 45px;
+         bottom: -10px;
+         background-color: #78645d;
+      }
+   }
+
+   &__text-subhead {
+      font-family: 'HelveticaNeueLTStd LtCn', sans-serif;
+      font-size: 36px;
+      text-transform: uppercase;
+   }
+
+   &__text-btn {
+      position: relative;
+      font-family: 'HelveticaNeueLTStd Th', sans-serif;
+      font-size: 16px;
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 20px 40px 17px 20px;
+      border-bottom: 3px solid #dd6b44;
+      background-color: #fd926d;
+      color: #ffffff;
+
+      &::after {
+         position: absolute;
+         content: "";
+         right: 10px;
+         top: 24px;
+         border: 5px solid transparent;
+         border-left-color: #fff;
+      }
+   }
+
+
+}
+
+.slick-prev,
+.slick-next {
+   position: absolute;
+   width: 30px;
+   height: 120px;
+   background-color: #fff;
+   z-index: 6;
+   border: none;
+   cursor: pointer;
+   outline: none;
+   font-size: 0;
+   box-shadow: 2px 2px 2px -2px rgba(0, 0, 0, 0.4);
+
+   &:hover slick-prev.slick-arrow::before {
+      font-size: 50px;
+      transition: all .3s ease;
+   }
+}
+
+.slick-next {
+   box-shadow: -2px 2px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+.slick-prev.slick-arrow {
+   left: 0;
+   top: 45%;
+   transform: translateY(-50%);
+
+
+   &::before {
+      position: absolute;
+      font-family: 'icomoon';
+      content: "\e905";
+      color: #cbcbca;
+      left: -3px;
+      top: 39px;
+      font-size: 36px;
+      transition: all .3s ease;
+   }
+}
+
+.slick-next.slick-arrow {
+   right: 0;
+   top: 45%;
+   transform: translateY(-50%);
+
+   &::before {
+      position: absolute;
+      font-family: 'icomoon';
+      content: "\e904";
+      color: #cbcbca;
+      right: -3px;
+      top: 39px;
+      font-size: 36px;
+      transition: all .3s ease;
+
+      &:hover {
+         font-size: 40px;
+      }
+   }
+}
+
+.slick-dots {
+   display: flex;
+   list-style: none;
+   position: absolute;
+   left: 43%;
+   bottom: -30px;
+}
+
+.slick-dots button {
+   border: none;
+   background-color: #867a76;
+   font-size: 0;
+   padding: 0;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   cursor: pointer;
+   outline: none;
+   margin-right: 20px;
+}
+
+.slick-dots .slick-active button {
+   background-color: #fd926d;
+}
+
+
+// Main slider
