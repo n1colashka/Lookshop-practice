@@ -27,23 +27,52 @@
 
    &__phone-link {}
 
-   &__currency {}
+   &__currency {
+      position: relative;
+   }
 
    &__currency-list {
+      z-index: 15;
+      position: absolute;
       padding: 0;
       margin: 0;
+      left: 0;
+      top: -500%;
+      text-align: center;
+      transition: all .5s ease;
+      width: 80px;
+   }
+
+   &__currency-list.open {
+      top: 30px;
+      transition: all .5s ease;
+   }
+
+   &__currency-item.open {
+      opacity: 1;
+      background-color: #000;
+      transition: all .5s ease;
    }
 
    &__currency-item {
-      padding: 0 30px 0 13px;
-      border-left: 1px solid #444444;
-      position: relative;
-      display: none;
+      opacity: 0;
+      margin-bottom: 0;
+      background-color: transparent;
+      border-bottom: 1px solid #444444;
+      transition: all .5s ease;
    }
 
-   &__currency-item.current {
+   &__currency-link {
       display: block;
+      padding: 0 30px 0 23px;
+      border-left: 1px solid #444444;
    }
+
+   &__currency-link.current {
+      
+   }
+
+
 
    .list::after {
       position: absolute;
@@ -80,6 +109,7 @@
       padding: 0 9px 0 9px;
       vertical-align: middle;
       transform: scale(-1, 1);
+      font-size: 16px;
    }
 
 }

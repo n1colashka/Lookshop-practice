@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,11 +27,17 @@
                     </div>
                     <div class="header-top__panel-right">
                         <div class="header-top__currency">
+                            <a href="#" class="header-top__currency-link current list">$ US</a>
                             <ul class="header-top__currency-list">
-                                <a href="#" class="header-top__currency-item current list">$ US</a>
-                                <a href="#" class="header-top__currency-item">€ EU</a>
-                                <a href="#" class="header-top__currency-item">£ EA</a>
-                                <a href="#" class="header-top__currency-item">₽ RU</a>
+                                <li class="header-top__currency-item">
+                                    <a href="#" class="header-top__currency-link">€ EU</a>
+                                </li>
+                                <li class="header-top__currency-item">
+                                    <a href="#" class="header-top__currency-link">£ EN</a>
+                                </li>
+                                <li class="header-top__currency-item">
+                                    <a href="#" class="header-top__currency-link">₽ RU</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="header-top__account">
@@ -264,9 +269,35 @@
         </div>
 
     </section>
-    
 
-    
+    <div class="contacts">
+        <div class="container">
+            <div class="contacts__content">
+                <div class="contacts__email">
+                    <label class="contacts__email-label" for="contacts-email">Stay updated</label>
+                    <input class="contacts__email-input" type="email" name="contacts-email" id="contacts-email" placeholder="Your email address">
+                    <button class="contacts__email-btn" type="submit"></button>
+                </div>
+                <div class="contacts__socials">
+                    <div class="contacts__socials-label">Find us here</div>
+                    <ul class="contacts__socials-list">
+                        <li class="contacts__socials-item">
+                            <a class="contacts__socials-link icon-facebook" href="#"></a>
+                        </li>
+                        <li class="contacts__socials-item">
+                            <a class="contacts__socials-link icon-twitter" href="#"></a>
+                        </li>
+                        <li class="contacts__socials-item">
+                            <a class="contacts__socials-link icon-pinterest" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
