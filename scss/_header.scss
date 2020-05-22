@@ -68,9 +68,7 @@
       border-left: 1px solid #444444;
    }
 
-   &__currency-link.current {
-      
-   }
+   &__currency-link.current {}
 
 
 
@@ -143,6 +141,8 @@
    &__item {
       position: relative;
 
+
+
       &-link {
          position: relative;
          padding-right: 12px;
@@ -167,10 +167,8 @@
          margin-top: 10px;
          position: absolute;
          text-align: center;
-         display: none;
          right: -30px;
          min-width: 150px;
-
       }
 
       .main-navigation__sublist-item {
