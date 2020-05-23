@@ -1,0 +1,131 @@
+.payment {
+   background-color: #f7f7f7;
+
+   &__caption {
+      color: rgba(65, 65, 65, 0.5);
+      margin-right: 15px;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+   }
+
+   &__img {
+      margin-left: 10px;
+   }
+
+   &__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+}
+
+.user-helper {
+   background-image: url(../img/secured.png);
+   background-repeat: no-repeat;
+   background-position: 95%;
+   background-color: #ededed;
+   padding-top: 25px;
+
+   &__content {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__list {}
+
+   &__list-title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #544f4d;
+      margin-bottom: 15px;
+   }
+
+   &__list-item {
+      line-height: 18px;
+      color: rgba(84, 79, 77, 0.7);
+   }
+
+   &__list-item-link {}
+
+   &__social-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 135px;
+      flex-wrap: wrap;
+   }
+
+   &__social-item {
+      margin-right: 10px;
+      margin-bottom: 8px;
+   }
+
+   &__social-item :nth-child(3n) {
+      margin-right: 0;
+   }
+
+   &__social-item-link {
+      display: block;
+      padding: 8px;
+      width: 35px;
+      height: 35px;
+      background-color: #544f4d;
+      border-radius: 50%;
+      font-size: 18px;
+      color: #ffffff;
+      transition: all .3s ease;
+
+      &:hover {
+         background-color: #fff;
+         color: #544f4d;
+         transition: all .3s ease;
+      }
+   }
+
+}
+
+
+.footer-bottom {
+   background-color: #000000;
+
+   &__content {
+      min-height: 75px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #8d8d8d;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__list-item {
+      
+   }
+
+   &__list-item-link {
+      display: inline-block;
+      padding-right: 10px;
+      padding-left: 10px;
+      border-right: 2px solid #8d8d8d;
+   }
+
+   &__list-item:last-child &__list-item-link {
+      padding-right: 0;
+      border-right: none;
+   }
+
+   &__copyright {
+      text-align: right;
+      line-height: 18px;
+   }
+}
