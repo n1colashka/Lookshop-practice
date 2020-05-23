@@ -34,6 +34,7 @@
    &__content {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 10px;
    }
 
    &__list {}
@@ -47,11 +48,18 @@
    }
 
    &__list-item {
-      line-height: 18px;
-      color: rgba(84, 79, 77, 0.7);
+      
    }
 
-   &__list-item-link {}
+   &__list-item-link {
+      line-height: 18px;
+      color: rgba(84, 79, 77, 0.7);
+      transition: all .3 ease;
+      &:hover {
+         color: rgb(78, 137, 247);
+         transition: all .3 ease;
+      }
+   }
 
    &__social-list {
       display: flex;
@@ -117,6 +125,11 @@
       padding-right: 10px;
       padding-left: 10px;
       border-right: 2px solid #8d8d8d;
+      transition: all .3 ease;
+      &:hover {
+         color: rgb(78, 137, 247);
+         transition: all .3 ease;
+      }
    }
 
    &__list-item:last-child &__list-item-link {
