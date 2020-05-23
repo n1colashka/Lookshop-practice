@@ -391,7 +391,6 @@
    }
 
    &__slider {
-
       .slick-slide {
          margin-right: 30px;
          margin-left: 30px;
@@ -413,7 +412,7 @@
          transform: scale(1.05);
       }
 
-      
+
       &-item:hover &-item-link::before,
       &-item:hover &-item-link::after {
          opacity: 1;
@@ -461,7 +460,7 @@
       padding-bottom: 8px;
       padding-top: 8px;
       outline: none;
-      transition: all .3s ease;
+      transition: all .5s ease;
 
 
       &-content {
@@ -604,6 +603,259 @@
 }
 
 // products
+
+// clearance
+
+.clearance {
+   &__sticker {
+      position: relative;
+      font-family: 'a Empirial', sans-serif;
+      background-image: url(../img/clearance.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 165px;
+      height: 165px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding-top: 25px;
+      margin: 20px auto;
+
+      &::before {
+         position: absolute;
+         content: "";
+         width: 390px;
+         height: 1px;
+         background-color: #d8d8d8;
+         top: 50%;
+         left: 175px;
+      }
+
+      &::after {
+         position: absolute;
+         content: "";
+         width: 390px;
+         height: 1px;
+         background-color: #d8d8d8;
+         top: 50%;
+         right: 175px;
+      }
+   }
+
+   &__title {
+      font-size: 36px;
+   }
+
+   &__discount {
+      position: relative;
+      margin-top: 8px;
+      margin-right: 20px;
+      font-size: 81px;
+      line-height: 60px;
+      letter-spacing: -2.5px;
+
+      &::before,
+      &::after {
+         position: absolute;
+         font-size: 36px;
+         letter-spacing: -1px;
+      }
+
+      &::before {
+         content: "%";
+         top: -15px;
+         right: 36px;
+      }
+
+      &::after {
+         content: "off";
+         top: 14px;
+         right: 31px;
+      }
+   }
+}
+
+.clearance {
+
+   &__items {
+      max-width: 970px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 50px;
+   }
+
+   &__item {
+      max-width: 220px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      transition: all .3s ease;
+      &:hover {
+         box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.35);
+         transform: scale(1.1);
+         transition: all .3s ease;
+      }
+   }
+
+   &__item:nth-child(4n) {
+      margin-right: 0;
+   }
+
+   &__item-link {}
+
+   &__item-content {
+      position: relative;
+      letter-spacing: -0.1px;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: #f7f7f7;
+      padding-bottom: 10px;
+
+   }
+
+   &__item-content.sale::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/sale.png);
+      width: 50px;
+      height: 50px;
+      top: 0;
+      left: 0;
+   }
+
+   &__item-img {
+      width: 220px;
+   }
+
+   &__item-title {
+      margin-top: 8px;
+   }
+
+   &__item-price {
+      margin-top: 8px;
+      font-size: 22px;
+   }
+
+   &__item-btn {
+      position: relative;
+      border: none;
+      border-bottom: 3px solid #dd6b44;
+      outline-color: #c66949;
+      background-color: #fd926d;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 9px 30px 9px 9px;
+      margin-top: 8px;
+      cursor: pointer;
+
+
+      &::before {
+         position: absolute;
+         content: "";
+         background-color: #fff;
+         width: 11px;
+         height: 3px;
+         right: 8px;
+         top: 49%;
+         transform: translateY(-50%);
+      }
+
+      &::after {
+         position: absolute;
+         content: "";
+         background-color: #fff;
+         width: 3px;
+         height: 11px;
+         right: 12px;
+         top: 49%;
+         transform: translateY(-50%);
+      }
+   }
+}
+
+
+// clearance
+
+// brands carousel
+
+.brands {
+   position: relative;
+   padding-bottom: 20px;
+
+   &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #d8d8d8;
+   }
+}
+
+.brands__title {
+   position: relative;
+   font-size: 15px;
+   font-weight: 700;
+   text-align: center;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+
+   &::before {
+      position: absolute;
+      content: "";
+      left: 772px;
+      top: 8px;
+      width: 80%;
+      height: 1px;
+      background-color: #d8d8d8;
+   }
+
+   &::after {
+      position: absolute;
+      content: "";
+      right: 772px;
+      top: 8px;
+      width: 80%;
+      height: 1px;
+      background-color: #d8d8d8;
+   }
+}
+
+.owl-carousel .owl-item img {
+   width: auto;
+   margin: 0 auto;
+}
+
+.owl-stage {
+   display: flex;
+   align-items: center;
+}
+
+// brands carousel
+
+// about
+
+
+.about {
+   text-align: center;
+   letter-spacing: -0.1px;
+		&__title {
+         font-size: 24px;
+         color: #414141;
+         margin-bottom: 13px;
+		}
+
+		&__text {
+         font-size: 14px;
+         line-height: 18px;
+         color: #999999;
+         padding-bottom: 25px;
+		}
+}
+
+
+// about
+
 
 
 

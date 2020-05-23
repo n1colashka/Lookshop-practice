@@ -39,6 +39,27 @@ $(function () {
         // adaptiveHeight: true 
     });
 
+    $(".owl-carousel").owlCarousel({
+        items: 8,
+        loop: true,
+        margin: 40,
+        
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:5
+            },
+            1000:{
+                items:6
+            },
+            1400:{
+                items:8
+            }
+        }
+    });
+
 
     $('.header-top__currency-link.current').on('click', function () {
         $('.header-top__currency-item').toggleClass('open');
