@@ -73,3 +73,7 @@
 .icon-keyboard_arrow_left:before {
   content: "\e905";
 }
+
+.icon-home3:before {
+  content: "\e906";
+}

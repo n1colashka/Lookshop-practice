@@ -86,8 +86,6 @@
       padding: 0;
    }
 
-   &__socials-item {}
-
    &__socials-link {
       padding: 22px 17px;
       font-size: 22px;
@@ -271,8 +269,6 @@
    }
 }
 
-.triple-box-big-symbol {}
-
 .triple-box-small {
    color: #ffffff;
    max-width: 241px;
@@ -399,13 +395,6 @@
       .slick-slide {
          margin-right: 30px;
          margin-left: 30px;
-      }
-
-      &-item-link {
-         // position: relative;
-         // display: block;
-         // cursor: pointer;
-         // outline: none;
       }
 
       &-item:hover &-item-link {
@@ -711,8 +700,6 @@
       margin-right: 0;
    }
    
-   &__item-link {}
-   
    &__item-content {
       position: relative;
       letter-spacing: -0.1px;
@@ -868,6 +855,64 @@
 
 
 // about
+
+
+// products sofi blouse
+
+.breadcrumbs {
+   position: relative;
+   display: flex;
+   justify-content: flex-start;
+   color: #79706d;
+   font-size: 11px;
+   line-height: 20px;
+   list-style-type: '>';
+   padding-left: 0;
+
+   &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: -10px;
+      width: 100%;
+      height: 1px;
+      background-color: #d6d6d6;
+   }
+
+   &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 1px;
+      background-color: #d6d6d6;
+   }
+
+   .icon-home3 {
+      font-size: 16px;
+      color: #79706d;
+      list-style: none;
+      padding-left: 0;
+   }
+
+   &__item {
+      
+   }
+
+
+   .icon-home3 {
+      list-style: none;
+   }
+
+   &__item-link {
+      padding-left: 10px;
+      margin-right: 15px;
+   }
+}
+
+
+// products sofi blouse
 
 
 

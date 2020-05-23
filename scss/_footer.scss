@@ -37,18 +37,12 @@
       padding-bottom: 10px;
    }
 
-   &__list {}
-
    &__list-title {
       font-size: 16px;
       font-weight: 700;
       line-height: 20px;
       color: #544f4d;
       margin-bottom: 15px;
-   }
-
-   &__list-item {
-      
    }
 
    &__list-item-link {
@@ -114,10 +108,6 @@
    &__list {
       display: flex;
       justify-content: space-between;
-   }
-
-   &__list-item {
-      
    }
 
    &__list-item-link {
