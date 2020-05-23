@@ -1,0 +1,31 @@
+@media(max-width: 1400px) {
+
+   .products {
+
+      .slick-prev,
+      .slick-next {
+         left: 1108px;
+      }
+
+      .slick-prev.slick-arrow {
+         left: 1061px;
+
+         &::before {
+            top: 50%;
+            left: 7px;
+            transform: translateY(-50%);
+         }
+      }
+
+      .slick-next.slick-arrow {
+
+         &::before {
+            left: -3px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+         }
+      }
+   }
+
+}

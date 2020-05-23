@@ -374,6 +374,7 @@
    &__tab {
       cursor: pointer;
       padding: 12px 14px 14px 12px;
+      transition: all .3s ease;
    }
 
    &__tab.current {
@@ -395,18 +396,73 @@
          margin-right: 30px;
          margin-left: 30px;
       }
+
+      &-item-link {
+         position: relative;
+         display: block;
+         cursor: pointer;
+         outline: none;
+      }
+
+      &-item:hover &-item-link {
+         box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.35);
+         transition: all .3s ease;
+      }
+
+      &-item:hover {
+         transform: scale(1.05);
+      }
+
+      
+      &-item:hover &-item-link::before,
+      &-item:hover &-item-link::after {
+         opacity: 1;
+         transition: all .3s ease;
+      }
+
+      &-item-link::before {
+         opacity: 0;
+         position: absolute;
+         content: "\e901";
+         font-family: 'icomoon';
+         top: 100px;
+         left: 43px;
+         width: 132px;
+         height: 132px;
+         background-color: #3d3d3d;
+         border-radius: 50%;
+         color: #ffffff;
+         z-index: 5;
+         transition: all .3s ease;
+         font-size: 30px;
+         padding-top: 30px;
+      }
+
+      &-item-link::after {
+         opacity: 0;
+         position: absolute;
+         content: "shop it";
+         color: #ffffff;
+         z-index: 5;
+         top: 44%;
+         left: 85px;
+         text-transform: uppercase;
+         transition: all .3s ease;
+      }
+
    }
 
    &__slider-item {
-      height: 395px;
+      height: 415px;
       width: 220px;
-      width: 100%;
       letter-spacing: -0.1px;
       color: #373737;
       text-align: center;
-
       padding-bottom: 8px;
+      padding-top: 8px;
       outline: none;
+      transition: all .3s ease;
+
 
       &-content {
          position: relative;
@@ -415,11 +471,6 @@
          background-color: #ffffff;
       }
 
-   }
-
-   &__slider-item-link {
-      cursor: pointer;
-      outline: none;
    }
 
    &__slider-item-img {
@@ -497,7 +548,7 @@
       outline: none;
       font-size: 0;
       box-shadow: none;
-      left: 1108px;
+      right: 456px;
       top: -54px;
       transition: all .3s ease;
 
@@ -517,7 +568,7 @@
    }
 
    .slick-prev.slick-arrow {
-      left: 1061px;
+      left: 1328px;
       transform: translateY(-50%);
 
       &::before {
