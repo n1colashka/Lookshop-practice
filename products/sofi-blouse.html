@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="../css/fonts.css">
    <link rel="stylesheet" href="../css/icomoon.css">
    <link rel="stylesheet" href="../css/normalize.css">
+   <link rel="stylesheet" href="../css/bars-reversed.css">
    <link rel="stylesheet" href="../css/animate.css">
    <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -209,7 +210,7 @@
 
       <ul class="breadcrumbs">
 
-         <a href="#" class="breadcrumbs__item-link icon-home3"></a>
+         <a href="../index.html" class="breadcrumbs__item-link icon-home3"></a>
 
          <li class="breadcrumbs__item">
             <a href="#" class="breadcrumbs__item-link">Women</a>
@@ -234,12 +235,12 @@
          <div class="product__main-content">
 
             <div class="product__images">
-               <img class="product__image-big" src="../img/products/sofi-blouse-big.jpg">
-               <div class="products__images-small">
-                  <img class="product__image-small" src="../img/products/sofi-blouse-small-1.jpg">
-                  <img class="product__image-small" src="../img/products/sofi-blouse-small-2.jpg">
-                  <img class="product__image-small" src="../img/products/sofi-blouse-small-3.jpg">
-                  <img class="product__image-small" src="../img/products/sofi-blouse-small-4.jpg">
+               <img class="product__image-big" src="../img/products/sofi-blouse-1.jpg">
+               <div class="product__images-small">
+                  <img class="product__image-small" src="../img/products/sofi-blouse-1.jpg">
+                  <img class="product__image-small" src="../img/products/sofi-blouse-2.jpg">
+                  <img class="product__image-small" src="../img/products/sofi-blouse-3.jpg">
+                  <img class="product__image-small" src="../img/products/sofi-blouse-4.jpg">
                </div>
             </div>
 
@@ -252,7 +253,16 @@
                   <div class="product__name">Sofi Blouse</div>
                   <div class="product__additional">
                      <div class="product__price">$98.95</div>
-                     <div class="product__reviews">12 reviews</div>
+                     <div class="product__reviews">
+                        <div class="product__reviews-title">12 reviews</div>
+                        <select id="bar-rating">
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                        </select>
+                     </div>
                   </div>
                </div>
                <div class="product__text">
@@ -274,23 +284,19 @@
                      <option value="sizeXL">XL</option>
                      <option value="sizeXXL">XXL</option>
                   </select>
-                  <div class="product__colors">
-                     <a class="product__color-link" href="#">
-                        <div class="product__color" style="background-color: red;"></div>
-                     </a>
-                     <a class="product__color-link" href="#">
-                        <div class="product__color" style="background-color: blue;"></div>
-                     </a>
-                     <a class="product__color-link" href="#">
-                        <div class="product__color" style="background-color: black;"></div>
-                     </a>
-                     <a class="product__color-link" href="#">
-                        <div class="product__color" style="background-color: green;"></div>
-                     </a>
-                     <a class="product__color-link" href="#">
-                        <div class="product__color" style="background-color: aquamarine;"></div>
-                     </a>
-                  </div>
+                  <ul class="product__colors">
+
+                     <button class="product__color" data-src="../img/products/sofi-blouse-white.jpg"
+                        style="background-color: #efebe2;"></button>
+                     <button class="product__color" data-src="../img/products/sofi-blouse-pink.jpg"
+                        style="background-color: #c9c1c6;"></button>
+                     <button class="product__color" data-src="../img/products/sofi-blouse-brown.jpg"
+                        style="background-color: #c9c1c6;"></button>
+                     <button class="product__color" data-src="../img/products/sofi-blouse-grey.jpg"
+                        style="background-color: #968886;"></button>
+                     <button class="product__color" data-src="../img/products/sofi-blouse-lightyellow.jpg"
+                        style="background-color: #cde0ef;"></button>
+                  </ul>
                </div>
                <div class="product__btns">
                   <div class="product__count">
@@ -371,55 +377,55 @@
 
 
          <div class="container">
-            <div class="clearance__items">
+            <div class="related__items">
 
-               <div class="clearance__item">
-                  <div class="clearance__item-content">
-                     <a class="clearance__item-link" href="#">
-                        <img class="clearance__item-img" src="../img/clearance-item-1.jpg">
-                        <div class="clearance__item-title">NADIA DRESS</div>
-                        <div class="clearance__item-price">$64.95</div>
+               <div class="related__item">
+                  <div class="related__item-content">
+                     <a class="related__item-link" href="#">
+                        <img class="related__item-img" src="../img/clearance-item-1.jpg">
+                        <div class="related__item-title">NADIA DRESS</div>
+                        <div class="related__item-price">$64.95</div>
                      </a>
-                     <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
+                     <button class="related__item-btn" name="addToCartProductsRelated" type="submit">Add
                         to
                         cart</button>
                   </div>
                </div>
 
-               <div class="clearance__item">
-                  <div class="clearance__item-content sale">
-                     <a class="clearance__item-link" href="#">
-                        <img class="clearance__item-img" src="../img/clearance-item-2.jpg">
-                        <div class="clearance__item-title">Sofi blouse</div>
-                        <div class="clearance__item-price">$26.95</div>
+               <div class="related__item">
+                  <div class="related__item-content sale">
+                     <a class="related__item-link" href="#">
+                        <img class="related__item-img" src="../img/clearance-item-2.jpg">
+                        <div class="related__item-title">Sofi blouse</div>
+                        <div class="related__item-price">$26.95</div>
                      </a>
-                     <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
+                     <button class="clearance__item-btn" name="addToCartProductsRelated" type="submit">Add
                         to
                         cart</button>
                   </div>
                </div>
 
-               <div class="clearance__item">
-                  <div class="clearance__item-content">
-                     <a class="clearance__item-link" href="#">
-                        <img class="clearance__item-img" src="../img/clearance-item-3.jpg">
-                        <div class="clearance__item-title">Gooding shorts</div>
-                        <div class="clearance__item-price">$79.95</div>
+               <div class="related__item">
+                  <div class="related__item-content">
+                     <a class="related__item-link" href="#">
+                        <img class="related__item-img" src="../img/clearance-item-3.jpg">
+                        <div class="related__item-title">Gooding shorts</div>
+                        <div class="related__item-price">$79.95</div>
                      </a>
-                     <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
+                     <button class="related__item-btn" name="addToCartProductsRelated" type="submit">Add
                         to
                         cart</button>
                   </div>
                </div>
 
-               <div class="clearance__item">
-                  <div class="clearance__item-content sale">
-                     <a class="clearance__item-link" href="#">
-                        <img class="clearance__item-img" src="../img/clearance-item-4.jpg">
-                        <div class="clearance__item-title">Mimosa lace dress</div>
-                        <div class="clearance__item-price">$76</div>
+               <div class="related__item">
+                  <div class="related__item-content sale">
+                     <a class="related__item-link" href="#">
+                        <img class="related__item-img" src="../img/clearance-item-4.jpg">
+                        <div class="related__item-title">Mimosa lace dress</div>
+                        <div class="related__item-price">$76</div>
                      </a>
-                     <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
+                     <button class="related__item-btn" name="addToCartProductsRelated" type="submit">Add
                         to
                         cart</button>
                   </div>
@@ -590,7 +596,9 @@
 
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="../js/jquery.barrating.min.js"></script>
    <script src="../js/products.js"></script>
+   
 </body>
 
 </html>

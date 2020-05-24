@@ -900,7 +900,7 @@
 // about
 
 
-// products sofi blouse
+// * product sofi blouse
 
 .breadcrumbs {
    position: relative;
@@ -967,12 +967,14 @@
 
    &__image-big {
       width: 400px;
+      height: 500px;
    }
 
    &__images-small {}
 
    &__image-small {
       width: 90px;
+      height: 110px;
       margin-left: 9px;
       margin-top: 9px;
    }
@@ -997,7 +999,7 @@
          font-family: 'icomoon';
          content: "\e905";
          left: -4px;
-         top: 3px;
+         top: 2px;
       }
 
       &::after {
@@ -1037,7 +1039,13 @@
       font-weight: 700;
    }
 
-   &__reviews {}
+   &__reviews {
+      display: flex;
+   }
+
+   &__reviews-title {
+      margin-right: 13px;
+   }
 
    &__text {
       line-height: 18px;
@@ -1084,12 +1092,15 @@
 
    &__colors {
       display: flex;
+      padding-left: 0;
    }
 
    &__color {
       width: 30px;
       height: 30px;
       margin-left: 1px;
+      cursor: pointer;
+      border: none;
    }
 
    &__btns {
@@ -1435,7 +1446,7 @@
    }
 }
 
-// products sofi blouse
+// * product sofi blouse
 
 
 
