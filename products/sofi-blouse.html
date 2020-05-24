@@ -25,7 +25,7 @@
                </div>
                <div class="header-top__panel-right">
                   <div class="header-top__currency">
-                     <a href="#" class="header-top__currency-link current list">$ US</a>
+                     <a class="header-top__currency-link current list" href="#">$ US</a>
                      <ul class="header-top__currency-list">
                         <li class="header-top__currency-item">
                            <a href="#" class="header-top__currency-link">€ EU</a>
@@ -227,27 +227,33 @@
          </li>
       </ul>
    </div>
+
    <section class="product">
+
       <div class="container">
          <div class="product__main-content">
 
             <div class="product__images">
                <img class="product__image-big" src="../img/products/sofi-blouse-big.jpg">
-               <img class="product__image-small" src="../img/products/sofi-blouse-small-1.jpg">
-               <img class="product__image-small" src="../img/products/sofi-blouse-small-2.jpg">
-               <img class="product__image-small" src="../img/products/sofi-blouse-small-3.jpg">
-               <img class="product__image-small" src="../img/products/sofi-blouse-small-4.jpg">
+               <div class="products__images-small">
+                  <img class="product__image-small" src="../img/products/sofi-blouse-small-1.jpg">
+                  <img class="product__image-small" src="../img/products/sofi-blouse-small-2.jpg">
+                  <img class="product__image-small" src="../img/products/sofi-blouse-small-3.jpg">
+                  <img class="product__image-small" src="../img/products/sofi-blouse-small-4.jpg">
+               </div>
             </div>
 
             <div class="product__info">
 
                <a class="product__back-to" href="#">
-                  Back to <span class="product__back-to-name">Women's Clothing</span>
+                  Back to <span class="product__back-to-section">Women's Clothing</span>
                </a>
                <div class="product__head">
                   <div class="product__name">Sofi Blouse</div>
-                  <div class="product__price">$98.95</div>
-                  <div class="products__reviews">12 reviews</div>
+                  <div class="product__additional">
+                     <div class="product__price">$98.95</div>
+                     <div class="product__reviews">12 reviews</div>
+                  </div>
                </div>
                <div class="product__text">
                   This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
@@ -269,18 +275,28 @@
                      <option value="sizeXXL">XXL</option>
                   </select>
                   <div class="product__colors">
-                     <div class="product__color" style="background-color: red;"></div>
-                     <div class="product__color" style="background-color: blue;"></div>
-                     <div class="product__color" style="background-color: black;"></div>
-                     <div class="product__color" style="background-color: green;"></div>
-                     <div class="product__color" style="background-color: aquamarine;"></div>
+                     <a class="product__color-link" href="#">
+                        <div class="product__color" style="background-color: red;"></div>
+                     </a>
+                     <a class="product__color-link" href="#">
+                        <div class="product__color" style="background-color: blue;"></div>
+                     </a>
+                     <a class="product__color-link" href="#">
+                        <div class="product__color" style="background-color: black;"></div>
+                     </a>
+                     <a class="product__color-link" href="#">
+                        <div class="product__color" style="background-color: green;"></div>
+                     </a>
+                     <a class="product__color-link" href="#">
+                        <div class="product__color" style="background-color: aquamarine;"></div>
+                     </a>
                   </div>
                </div>
                <div class="product__btns">
                   <div class="product__count">
                      <button class="product__count-btn-plus">+</button>
                      <div class="product__counter">1</div>
-                     <button class="product__count-btn-minus">+</button>
+                     <button class="product__count-btn-minus">-</button>
                   </div>
                   <div class="product__add">
                      <button class="product__add-btn">Add to cart</button>
@@ -292,94 +308,125 @@
          </div>
 
          <div class="product__social">
-            <ul class="products__social-list">
+            <ul class="product__social-list">
                <li class="product__social-item">
-                  <a class="product__social-item-link">share on facebook</a>
+                  <a class="product__social-item-icon icon-facebook" href="#"></a>
+                  <a class="product__social-item-link" href="#">share<br>on facebook</a>
                </li>
                <li class="product__social-item">
-                  <a class="product__social-item-link">pin this product </a>
+                  <a class="product__social-item-icon icon-pinterest" href="#"></a>
+                  <a class="product__social-item-link" href="#">pin<br>this product</a>
                </li>
                <li class="product__social-item">
-                  <a class="product__social-item-link">tweet this product</a>
+                  <a class="product__social-item-icon icon-twitter" href="#"></a>
+                  <a class="product__social-item-link" href="#">tweet<br>this product</a>
                </li>
                <li class="product__social-item">
-                  <a class="product__social-item-link">email a friend</a>
+                  <a class="product__social-item-icon icon-user" href="#"></a>
+                  <a class="product__social-item-link" href="#">email<br>a friend</a>
                </li>
             </ul>
          </div>
 
          <div class="product__extra-content">
             <ul class="product__extra-content-list">
-               <li class="product__list-item">Description</li>
-               <li class="product__list-item">Additional information</li>
-               <li class="product__list-item">Reviews (<span>12</span>)</li>
-               <li class="product__list-item">Helpful links</li>
-               <li class="product__list-item">Make a gift</li>
+               <li class="product__list-item description" style="background-color: #ffd5c6;">Description</li>
+               <div class="product__list-item-content hide">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae adipisci ea maiores deleniti
+                  dolorum repellendus recusandae et, blanditiis excepturi quas nulla at, qui iste numquam. Repellat
+                  tempore mollitia reprehenderit quo?
+               </div>
+               <li class="product__list-item add-information" style="background-color: #ffcab8;">Additional information
+               </li>
+               <div class="product__list-item-content hide">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae adipisci ea maiores deleniti
+                  dolorum repellendus recusandae et, blanditiis excepturi quas nulla at, qui iste numquam. Repellat
+                  tempore mollitia reprehenderit quo?
+               </div>
+               <li class="product__list-item reviews" style="background-color: #ffae92;">Reviews (<span>12</span>)</li>
+               <div class="product__list-item-content hide">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae adipisci ea maiores deleniti
+                  dolorum repellendus recusandae et, blanditiis excepturi quas nulla at, qui iste numquam. Repellat
+                  tempore mollitia reprehenderit quo?
+               </div>
+               <li class="product__list-item helpful-links" style="background-color: #ffa687;">Helpful links</li>
+               <div class="product__list-item-content hide">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae adipisci ea maiores deleniti
+                  dolorum repellendus recusandae et, blanditiis excepturi quas nulla at, qui iste numquam. Repellat
+                  tempore mollitia reprehenderit quo?
+               </div>
+               <li class="product__list-item make-a-gift" style="background-color: #fd926d;">Make a gift</li>
+               <div class="product__list-item-content hide">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae adipisci ea maiores deleniti
+                  dolorum repellendus recusandae et, blanditiis excepturi quas nulla at, qui iste numquam. Repellat
+                  tempore mollitia reprehenderit quo?
+               </div>
             </ul>
          </div>
       </div>
       <!-- Rename this-->
-      <div class="products__related">
+      <div class="related">
 
-      </div>
-      <div class="container">
-         <div class="clearance__items">
+         <div class="related__title">Related products</div>
 
-            <div class="clearance__item">
-               <div class="clearance__item-content">
-                  <a class="clearance__item-link" href="#">
-                     <img class="clearance__item-img" src="../img/clearance-item-1.jpg">
-                     <div class="clearance__item-title">NADIA DRESS</div>
-                     <div class="clearance__item-price">$64.95</div>
-                  </a>
-                  <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
-                     to
-                     cart</button>
+
+         <div class="container">
+            <div class="clearance__items">
+
+               <div class="clearance__item">
+                  <div class="clearance__item-content">
+                     <a class="clearance__item-link" href="#">
+                        <img class="clearance__item-img" src="../img/clearance-item-1.jpg">
+                        <div class="clearance__item-title">NADIA DRESS</div>
+                        <div class="clearance__item-price">$64.95</div>
+                     </a>
+                     <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
+                        to
+                        cart</button>
+                  </div>
                </div>
-            </div>
 
-            <div class="clearance__item">
-               <div class="clearance__item-content sale">
-                  <a class="clearance__item-link" href="#">
-                     <img class="clearance__item-img" src="../img/clearance-item-2.jpg">
-                     <div class="clearance__item-title">Sofi blouse</div>
-                     <div class="clearance__item-price">$26.95</div>
-                  </a>
-                  <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
-                     to
-                     cart</button>
+               <div class="clearance__item">
+                  <div class="clearance__item-content sale">
+                     <a class="clearance__item-link" href="#">
+                        <img class="clearance__item-img" src="../img/clearance-item-2.jpg">
+                        <div class="clearance__item-title">Sofi blouse</div>
+                        <div class="clearance__item-price">$26.95</div>
+                     </a>
+                     <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
+                        to
+                        cart</button>
+                  </div>
                </div>
-            </div>
 
-            <div class="clearance__item">
-               <div class="clearance__item-content">
-                  <a class="clearance__item-link" href="#">
-                     <img class="clearance__item-img" src="../img/clearance-item-3.jpg">
-                     <div class="clearance__item-title">Gooding shorts</div>
-                     <div class="clearance__item-price">$79.95</div>
-                  </a>
-                  <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
-                     to
-                     cart</button>
+               <div class="clearance__item">
+                  <div class="clearance__item-content">
+                     <a class="clearance__item-link" href="#">
+                        <img class="clearance__item-img" src="../img/clearance-item-3.jpg">
+                        <div class="clearance__item-title">Gooding shorts</div>
+                        <div class="clearance__item-price">$79.95</div>
+                     </a>
+                     <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
+                        to
+                        cart</button>
+                  </div>
                </div>
-            </div>
 
-            <div class="clearance__item">
-               <div class="clearance__item-content sale">
-                  <a class="clearance__item-link" href="#">
-                     <img class="clearance__item-img" src="../img/clearance-item-4.jpg">
-                     <div class="clearance__item-title">Mimosa lace dress</div>
-                     <div class="clearance__item-price">$76</div>
-                  </a>
-                  <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
-                     to
-                     cart</button>
+               <div class="clearance__item">
+                  <div class="clearance__item-content sale">
+                     <a class="clearance__item-link" href="#">
+                        <img class="clearance__item-img" src="../img/clearance-item-4.jpg">
+                        <div class="clearance__item-title">Mimosa lace dress</div>
+                        <div class="clearance__item-price">$76</div>
+                     </a>
+                     <button class="clearance__item-btn" name="addToCartProductsClearance" type="submit">Add
+                        to
+                        cart</button>
+                  </div>
                </div>
             </div>
          </div>
-
       </div>
-
 
    </section>
 
@@ -542,7 +589,8 @@
 
 
 
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="../js/products.js"></script>
 </body>
 
 </html>
