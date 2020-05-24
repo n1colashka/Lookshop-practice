@@ -2023,6 +2023,11 @@ h3 {
   border: 1px solid #fff;
 }
 
+.product__list-item-content {
+  text-transform: capitalize;
+  color: #000000;
+}
+
 .related__title {
   position: relative;
   text-align: center;

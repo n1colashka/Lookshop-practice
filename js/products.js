@@ -12,15 +12,12 @@ $(function () {
       initialRating: 5
    });
 
+   // * Поиск картинок
    let imageBig = $('.product__images').find('img')[0];
-   // let imagesSmall = $('.product__images-small').find('img');
-   let imagesSmall = document.querySelectorAll('.product__image-small');
+   let imagesSmall = $('.product__images-small').find('img');
    let imagesSmallParent = $('.product__images');
 
-   console.log(imageBig);
-   console.log(imagesSmall);
-   
-
+   // * Проверка на какую картинку нажали и установка нужного пути
    $(imagesSmallParent).on('click', function (event) {
       let target = event.target;
       let imagePath;
@@ -31,18 +28,33 @@ $(function () {
 
             if (target == imagesSmall[i]) {
                imagePath = '../img/products/sofi-blouse-' + (i + 1) + '.jpg';
-               console.log('vot' + imagesSmall[i]);
-
             }
          }
-         
+
          changeImage(imagePath);
       }
    });
 
-
+// * Вставка большой картинки
    function changeImage(str) {
       imageBig.setAttribute('src', str);
    }
+
+   // * Разворачивание дополнительной информации
+
+   let extraList = $('.product__extra-content-list');
+   let itemContent = $('.product__list-item');
+
+   $(extraList).on('click', function (event) {
+      let target = event.target;
+      
+      if (target && $(target).hasClass('product__list-item')) {
+         for (let i = 0; i < itemContent.length; i++) {
+            if (target == itemContent[i]) {
+               $(itemContent[i]).next().toggle('show');    // * Делаем блоки видимыми / невидимыми
+            }
+         }
+      }
+   });
 
 });
