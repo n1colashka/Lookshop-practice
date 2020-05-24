@@ -16,6 +16,7 @@ $(function () {
    let imageBig = $('.product__images').find('img')[0];
    let imagesSmall = $('.product__images-small').find('img');
    let imagesSmallParent = $('.product__images');
+   let imageName = ['sofi-blouse'];
 
    // * Проверка на какую картинку нажали и установка нужного пути
    $(imagesSmallParent).on('click', function (event) {
@@ -27,7 +28,7 @@ $(function () {
          for (let i = 0; i < imagesSmall.length; i++) {
 
             if (target == imagesSmall[i]) {
-               imagePath = '../img/products/sofi-blouse-' + (i + 1) + '.jpg';
+               imagePath = '../img/products/' + imageName[0] + '-' + (i + 1) + '.jpg';
             }
          }
 
