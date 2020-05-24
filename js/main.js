@@ -43,19 +43,19 @@ $(function () {
         items: 8,
         loop: true,
         margin: 40,
-        
-        responsive:{
-            0:{
-                items:3
+
+        responsive: {
+            0: {
+                items: 3
             },
-            600:{
-                items:5
+            600: {
+                items: 5
             },
-            1000:{
-                items:6
+            1000: {
+                items: 6
             },
-            1400:{
-                items:8
+            1400: {
+                items: 8
             }
         }
     });
@@ -112,6 +112,8 @@ $(function () {
 
     // /tabs
 
+
+    
 
 
 });
