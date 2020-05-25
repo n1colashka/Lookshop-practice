@@ -60,6 +60,14 @@ h3 {
    display: none;
 }
 
+.open {
+   display: block;
+}
+
+.close {
+   display: none;
+}
+
 .select {
    select {
       -webkit-appearance: none;
