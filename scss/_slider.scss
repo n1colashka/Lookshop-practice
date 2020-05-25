@@ -139,11 +139,6 @@
    outline: none;
    font-size: 0;
    box-shadow: 2px 2px 2px -2px rgba(0, 0, 0, 0.4);
-
-   &:hover slick-prev.slick-arrow::before {
-      font-size: 50px;
-      transition: all .3s ease;
-   }
 }
 
 .slick-next {
@@ -183,9 +178,6 @@
       font-size: 36px;
       transition: all .3s ease;
 
-      &:hover {
-         font-size: 40px;
-      }
    }
 }
 

@@ -33,32 +33,29 @@
    &__currency-list {
       z-index: 15;
       position: absolute;
+      visibility: hidden;
       padding: 0;
       margin: 0;
       left: 0;
-      top: -500%;
+      top: 200%;
       text-align: center;
-      transition: all .5s ease;
+      transition: all .3s ease;
       width: 80px;
+      opacity: 0;
    }
 
    &__currency-list.open {
-      top: 30px;
-      transition: all .5s ease;
-   }
-
-   &__currency-item.open {
       opacity: 1;
-      background-color: #000;
-      transition: all .5s ease;
+      visibility: visible;
+      top: 30px;
+      transition: all .3s ease;
    }
 
    &__currency-item {
-      opacity: 0;
       margin-bottom: 0;
-      background-color: transparent;
+      background-color: #000;
       border-top: 1px solid #444444;
-      transition: all .5s ease;
+      transition: all .3s ease;
    }
 
    &__currency-link {
