@@ -37,9 +37,6 @@
       padding-left: 0;
    }
 
-   &__item {}
-
-
    .icon-home3 {
       list-style: none;
    }
@@ -326,6 +323,7 @@
             font-weight: 700;
             color: #333333;
          }
+
          padding-left: 15px;
       }
 
@@ -391,7 +389,6 @@
          }
 
          .ui-slider-handle.ui-corner-all.ui-state-default {
-
             border-radius: 50%;
             border: none;
             background-color: #fd926d;
@@ -403,6 +400,10 @@
             height: 5px;
             background-color: #fd926d;
             outline: none;
+         }
+
+         .ui-slider-horizontal .ui-slider-range {
+            top: -1px;
          }
 
          .ui-corner-all {

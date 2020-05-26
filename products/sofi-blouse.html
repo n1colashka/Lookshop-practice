@@ -9,7 +9,7 @@
    <link rel="stylesheet" href="../css/icomoon.css">
    <link rel="stylesheet" href="../css/normalize.css">
    <link rel="stylesheet" href="../css/bars-reversed.css">
-   <link rel="stylesheet" href="../css/animate.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
    <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -233,8 +233,8 @@
          <div class="product__main-content">
 
             <div class="product__images">
-               <img class="product__image-big" src="../img/products/sofi-blouse-1.jpg">
-               <div class="product__images-small">
+               <img class="product__image-big wow animate__animated animate__fadeIn" src="../img/products/sofi-blouse-1.jpg">
+               <div class="product__images-small wow animate__animated animate__fadeIn">
                   <img class="product__image-small" src="../img/products/sofi-blouse-1.jpg">
                   <img class="product__image-small" src="../img/products/sofi-blouse-2.jpg">
                   <img class="product__image-small" src="../img/products/sofi-blouse-3.jpg">
@@ -248,10 +248,10 @@
                   Back to <span class="product__back-to-section">Women's Clothing</span>
                </a>
                <div class="product__head">
-                  <div class="product__name">Sofi Blouse</div>
+                  <div class="product__name wow animate__animated animate__fadeInUp">Sofi Blouse</div>
                   <div class="product__additional">
-                     <div class="product__price">$98.95</div>
-                     <div class="product__reviews">
+                     <div class="product__price wow animate__animated animate__fadeInUp" style="animation-delay: .3s;">$98.95</div>
+                     <div class="product__reviews wow animate__animated animate__fadeIn" style="animation-delay: .6s;">
                         <div class="product__reviews-title">12 reviews</div>
                         <select id="bar-rating">
                            <option value="1">1</option>
@@ -263,7 +263,7 @@
                      </div>
                   </div>
                </div>
-               <div class="product__text">
+               <div class="product__text wow animate__animated animate__fadeInUp" style="animation-delay: .5s;">
                   This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
                   sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
                   Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
@@ -379,7 +379,7 @@
          <div class="container">
             <div class="related__items goods__items">
 
-               <div class="related__item goods__item">
+               <div class="related__item goods__item wow animate__animated animate__fadeInLeft" data-wow-offset="200">
                   <div class="related__item-content goods__item-content">
                      <a class="related__item-link goods__item-link" href="#">
                         <img class="related__item-img goods__item-img" src="../img/clearance-item-1.jpg">
@@ -392,8 +392,8 @@
                   </div>
                </div>
 
-               <div class="related__item goods__item sale">
-                  <div class="related__item-content goods__item-content">
+               <div class="related__item goods__item wow animate__animated animate__fadeInUp" data-wow-offset="200"">
+                  <div class="related__item-content goods__item-content sale">
                      <a class="related__item-link goods__item-link" href="#">
                         <img class="related__item-img goods__item-img" src="../img/clearance-item-2.jpg">
                         <div class="related__item-title goods__item-title">Sofi shorts</div>
@@ -405,7 +405,7 @@
                   </div>
                </div>
 
-               <div class="related__item goods__item">
+               <div class="related__item goods__item wow animate__animated animate__fadeInDown" data-wow-offset="200"">
                   <div class="related__item-content goods__item-content">
                      <a class="related__item-link goods__item-link" href="#">
                         <img class="related__item-img goods__item-img" src="../img/clearance-item-3.jpg">
@@ -418,7 +418,7 @@
                   </div>
                </div>
 
-               <div class="related__item goods__item">
+               <div class="related__item goods__item wow animate__animated animate__fadeInRight" data-wow-offset="200"">
                   <div class="related__item-content goods__item-content">
                      <a class="related__item-link goods__item-link" href="#">
                         <img class="related__item-img goods__item-img" src="../img/clearance-item-4.jpg">
@@ -598,6 +598,7 @@
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="../js/jquery.barrating.min.js"></script>
+   <script src="../js/wow.min.js"></script>
    <script src="../js/product.js"></script>
 
 </body>

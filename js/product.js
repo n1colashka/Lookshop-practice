@@ -82,4 +82,6 @@ $(function () {
         counter.textContent = sum;
     });
 
+    // wow
+    new WOW().init();
 });

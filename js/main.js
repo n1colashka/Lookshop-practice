@@ -112,8 +112,8 @@ $(function () {
 
     // /tabs
 
-
-    
+    // wow
+    new WOW().init();
 
 
 });
