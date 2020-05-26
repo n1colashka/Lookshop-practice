@@ -322,11 +322,10 @@
       }
 
       &__categories-sublist {
-         .active {
+         .current {
             font-weight: 700;
             color: #333333;
          }
-
          padding-left: 15px;
       }
 
@@ -363,13 +362,10 @@
             cursor: pointer;
             height: 32px;
 
-            &:hover {
-               border-bottom: 3px solid #dd6b44;
-               background-color: #fd926d;
-               color: #fff;
-               transition: all .3s ease;
-            }
+         }
 
+         .active {
+            border-bottom: 3px solid #dd6b44;
          }
 
          #filter-range {
@@ -445,12 +441,6 @@
          transition: all .3s ease;
          outline-color: #c66949;
 
-         &:hover {
-            color: #fff;
-            background-color: #fd926d;
-            transition: all .3s ease;
-         }
-
       }
 
       &__sizes-btn+.filter__sizes-btn {
@@ -459,7 +449,7 @@
 
 
 
-      &__sizes-btn.active {
+      .active {
          color: #fff;
          background-color: #fd926d;
          transition: all .3s ease;
