@@ -22,34 +22,6 @@
       }
    }
 
-   .products {
-
-      .slick-prev,
-      .slick-next {
-         left: 1108px;
-      }
-
-      .slick-prev.slick-arrow {
-         left: 1061px;
-
-         &::before {
-            top: 50%;
-            left: 7px;
-            transform: translateY(-50%);
-         }
-      }
-
-      .slick-next.slick-arrow {
-
-         &::before {
-            left: -3px;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-         }
-      }
-   }
-
 }
 
 @media(max-width: 1150px) {
@@ -190,6 +162,20 @@
 
 }
 
+@media(max-width: 989px) {
+   .clearance__items {
+      justify-content: center;
+   }
+
+   .clearance__item:nth-child(3n) {
+      margin-right: 0;
+   }
+   .clearance__items {
+      max-width: 900px;
+  }
+
+}
+
 @media(max-width: 950px) {
 
    .slider {
@@ -306,7 +292,7 @@
    }
 }
 
-@media(max-width: 750px) {
+@media(max-width: 749px) {
    .hot-collections__triple-box {
       display: none;
    }
@@ -318,6 +304,15 @@
    .single-box-main {
       margin-right: 50px;
    }
+
+   .clearance__item:nth-child(3n) {
+      margin-right: 30px;
+   }
+
+   .clearance__item:nth-child(4n) {
+      margin-right: 30px;
+   }
+
 }
 
 @media(max-width: 740px) {
@@ -335,6 +330,50 @@
    .main-slider {
       display: none;
    }
+
+   .products {
+      &__tabs {
+         display: block;
+         background-color: #fd926d;
+         color: #ffffff;
+         font-size: 30px;
+         width: 100%;
+         max-width: 100%;
+         margin-top: 0;
+      }
+
+      &__tabs-wrapper {
+         padding-bottom: 30px;
+         background-color: #fd926d;
+
+         .container {
+            padding: 0;
+            margin: 0;
+         }
+      }
+
+      &__tab {
+         position: relative;
+         padding: 25px;
+         transition: none;
+      }
+
+      &__tab.current {
+         background-color: #f4845d;
+
+         &::after {
+            position: absolute;
+            content: "";
+            right: 23px;
+            top: 50%;
+            border: 12px solid transparent;
+            border-top-color: #fff;
+         }
+      }
+
+
+   }
+
 }
 
 @media(max-width: 600px) {
@@ -557,6 +596,7 @@
       &__socials {
          display: block;
          text-align: center;
+         margin-bottom: 20px;
       }
 
       &__socials-list {

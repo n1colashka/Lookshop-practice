@@ -372,6 +372,15 @@
       max-width: 500px;
       padding: 0;
       margin-bottom: 0;
+
+      .products__tab.list-delete {
+         &::after {
+            display: none;
+         }
+         &::before {
+            display: none;
+         }
+      }
    }
 
    &__tabs-wrapper {
@@ -390,9 +399,8 @@
    }
 
    &__tab-content {
-      padding-top: 30px;
+      padding-top: 50px;
       padding-bottom: 30px;
-      height: 455px;
       width: 100%;
       background-color: #fd926d;
    }
@@ -556,14 +564,15 @@
       outline: none;
       font-size: 0;
       box-shadow: none;
-      right: 456px;
-      top: -54px;
+      top: -22px;
+      right: 0;
       transition: all .3s ease;
 
       &:hover {
          background-color: #fd926d;
          transition: all .3s ease;
       }
+
    }
 
    .slick-arrow:hover::before {
@@ -576,7 +585,7 @@
    }
 
    .slick-prev.slick-arrow {
-      left: 1328px;
+      left: 0;
       transform: translateY(-50%);
 
       &::before {
@@ -606,6 +615,7 @@
          transition: all .3s ease;
       }
    }
+
 
    //Slick
 
