@@ -213,6 +213,24 @@ $(function () {
         }
     });
 
+    // footer burger
+
+    let footerMenuLine = $('.footer-menu__line-wrapper'),
+        footerMenu = $('.footer-menu__list'),
+        footerMenuClose = $('.footer-menu__close'),
+        footerMenuItems = $('.footer-menu__link');
+
+    $(footerMenuLine).on('click', function (event) {
+        $(footerMenu).toggle('drop', {direction: 'down'}, 350);
+    });
+
+    $(footerMenuClose).on('click', function (event) {
+        $(footerMenu).toggle('drop', {direction: 'down'}, 350);
+    });
+    
+
+    
+
 
     // adaptive
 

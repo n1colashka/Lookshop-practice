@@ -1792,6 +1792,8 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 10px;
 }
 
@@ -1861,6 +1863,7 @@ h3 {
 }
 
 .footer-bottom {
+  position: relative;
   background-color: #000000;
 }
 
@@ -1911,6 +1914,88 @@ h3 {
 .footer-bottom__copyright {
   text-align: right;
   line-height: 18px;
+}
+
+.footer-bottom .footer-menu {
+  position: relative;
+  width: 100%;
+}
+
+.footer-bottom .footer-menu__list {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+  background-color: #000;
+  padding: 0;
+  width: 100%;
+}
+
+.footer-bottom .footer-menu__item {
+  width: 100%;
+}
+
+.footer-bottom .footer-menu__link {
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #000;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.footer-bottom .footer-menu__close {
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #3d0606;
+}
+
+.footer-bottom .footer-menu .footer-menu__line-wrapper {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+.footer-bottom .footer-menu .footer-menu__line {
+  cursor: pointer;
+  position: absolute;
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  margin-right: 15px;
+  bottom: 35px;
+  left: 20px;
+}
+
+.footer-bottom .footer-menu .footer-menu__line::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  left: 0;
+  top: 8px;
+}
+
+.footer-bottom .footer-menu .footer-menu__line::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 8px;
 }
 
 .contacts {
@@ -2717,6 +2802,12 @@ h3 {
   }
 }
 
+@media (max-width: 1300px) {
+  .user-helper {
+    background-image: none;
+  }
+}
+
 @media (max-width: 1150px) {
   .slider__item {
     background-position: 113%;
@@ -2980,6 +3071,20 @@ h3 {
     border: 12px solid transparent;
     border-top-color: #fff;
   }
+  .footer .footer-menu {
+    display: block;
+  }
+  .footer .user-helper {
+    display: none;
+  }
+  .footer .footer-bottom__list {
+    display: none;
+  }
+  .footer .footer-bottom__content {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3134,6 +3239,9 @@ h3 {
   .brands__title::after {
     right: 0;
     width: 100px;
+  }
+  .payment__caption {
+    display: none;
   }
 }
 
