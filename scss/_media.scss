@@ -15,6 +15,11 @@
       &__item {
          background-position: 88%;
       }
+
+      .slick-dots {
+         left: 50%;
+         transform: translateX(-50%);
+      }
    }
 
    .products {
@@ -66,6 +71,123 @@
 
       }
    }
+
+   .hot-collections {
+
+      &__content {
+         height: 260px;
+         width: 730px;
+         margin: 0 auto;
+      }
+
+      &__single-box {
+         height: 256px;
+      }
+
+      &__triple-box {
+         height: 256px;
+      }
+   }
+
+
+   .single-box-main {
+
+      max-width: 200px;
+      padding-top: 35px;
+      margin-right: 15px;
+
+      &__top-text {
+         font-size: 28px;
+      }
+
+      &__title {
+         font-size: 64px;
+      }
+
+      &__symbol {
+         &::before {
+            width: 70px;
+         }
+
+         &::after {
+            width: 70px;
+         }
+      }
+
+      &__subtitle {
+         font-size: 72px;
+      }
+   }
+
+   .triple-box-big {
+      height: 127px;
+      width: 364px;
+
+      &__circle-shadow {
+         width: 100px;
+         height: 100px;
+      }
+
+      &__circle {
+         width: 100px;
+         height: 100px;
+
+         &::before {
+            width: 90px;
+            height: 90px;
+         }
+      }
+
+      &__top-text {
+         font-size: 18px;
+      }
+
+      &__title {
+         font-size: 32px;
+         line-height: 32px;
+      }
+
+      &__subtitle {
+         font-size: 10px;
+      }
+   }
+
+   .triple-box-small {
+      height: 127px;
+      width: 180px;
+
+      &__title {}
+
+      &__content {}
+
+      &__link {}
+   }
+
+   .small-item--1 {
+      font-size: 24px;
+
+      &::before {
+         right: 18px;
+         bottom: 10px;
+         font-size: 20px;
+      }
+   }
+
+   .small-item--2 {
+      .triple-box-small__content {
+         padding-left: 0px;
+         padding-top: 34px;
+         max-width: 115px;
+      }
+
+      .triple-box-small__title {
+         margin-bottom: 10px;
+      }
+
+      font-size: 20px;
+      line-height: 20px;
+   }
+
 }
 
 @media(max-width: 950px) {
@@ -181,10 +303,20 @@
          }
       }
 
-      .slick-dots {
-         left: 50%;
-         transform: translateX(-50%);
-      }
+   }
+}
+
+@media(max-width: 750px) {
+   .hot-collections__triple-box {
+      display: none;
+   }
+
+   .hot-collections__content {
+      width: 100%;
+   }
+
+   .single-box-main {
+      margin-right: 50px;
    }
 }
 
@@ -197,6 +329,7 @@
 
    }
 }
+
 
 @media(max-width: 650px) {
    .main-slider {
@@ -231,15 +364,9 @@
          padding: 30px 5px;
       }
 
-      &__phone-label {}
-
-      &__phone-link {}
-
       &__panel-right {
          font-size: 30px;
       }
-
-      &__currency {}
 
       &__currency-list.open {
          top: 90px;
@@ -291,6 +418,8 @@
          display: block;
          width: 100%;
          font-size: 30px;
+         height: 96px;
+         margin-left: 2px;
       }
 
       &__cart-count::before {
@@ -303,5 +432,192 @@
       }
    }
 
+   .burger-menu {
+      &__inner {
+         height: 96px;
+      }
+
+      &__line {
+         width: 33px;
+         height: 6px;
+         border-radius: 4px;
+
+         &::before {
+            width: 33px;
+            height: 6px;
+            top: 12px;
+         }
+
+         &::after {
+            width: 33px;
+            height: 6px;
+            bottom: 12px;
+         }
+      }
+   }
+
+   .contacts {
+      background-color: #fff;
+
+      &__content {
+         display: block;
+      }
+
+      &__email-label {
+         display: none;
+      }
+
+      &__email-input {
+         margin-top: 5px;
+         display: block;
+         background-color: #ededed;
+         width: 100%;
+         height: 96px;
+         font-size: 30px;
+         padding: 25px;
+         color: #9f9f9f;
+      }
+
+      &__email-btn {
+         border-bottom: 8px solid #dd6b44;
+         height: 96px;
+         width: 96px;
+         right: 0;
+         top: 0;
+
+         &::before {
+            width: 11px;
+            height: 37px;
+         }
+
+         &::after {
+            width: 37px;
+            height: 11px;
+         }
+      }
+
+      &__socials {
+         justify-content: center;
+         align-items: center;
+         margin-top: 20px;
+      }
+
+      &__socials-label {
+         font-size: 26px;
+         color: #6c6c6c;
+         margin-right: 30px;
+      }
+
+      &__socials-link {
+         background-color: #f7f7f7;
+
+         &:hover {
+            background-color: #ededed;
+         }
+      }
+   }
+
+}
+
+@media(max-width: 565px) {
+   .header-top {
+      .header-top__account-link {
+         padding: 30px 10px 30px 50px;
+
+         &::before {
+            left: 15px;
+         }
+      }
+
+   }
+}
+
+@media(max-width: 465px) {
+   .header-top {
+      .header-top__panel-right {
+         font-size: 22px;
+      }
+   }
+
+   .header-top__phone {
+      font-size: 26px;
+   }
+
+   .contacts {
+      &__email-input {
+         height: 76px;
+         font-size: 24px;
+      }
+
+      &__email-btn {
+         width: 76px;
+         height: 76px;
+      }
+
+      &__socials {
+         display: block;
+         text-align: center;
+      }
+
+      &__socials-list {
+         justify-content: space-around;
+      }
+   }
+}
+
+@media(max-width: 420px) {
+   .hot-collections {
+      display: none;
+   }
+}
+
+@media(max-width: 400px) {
+   .header-top {
+      .header-top__account-link {
+         font-size: 0;
+         padding-left: 130px;
+         ;
+
+         &::before {
+            left: 60px;
+            font-size: 46px;
+         }
+      }
+   }
+
+   .main-navigation .logo__img {
+      width: 310px;
+      padding-right: 20px;
+   }
+}
+
+@media(max-width: 355px) {
+   .header-top {
+      .header-top__account-link {
+         padding-left: 90px;
+
+         &::before {
+            left: 42px;
+            font-size: 46px;
+         }
+      }
+
+      .header-top__phone-link {
+         display: block;
+      }
+   }
+
+   .main-navigation .logo__img {
+      width: 295px;
+   }
+
+   .contacts {
+      &__email-btn {
+         position: relative;
+         top: 0;
+         width: 100%;
+         height: 76px;
+      }
+   }
 
 }

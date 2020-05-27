@@ -6,10 +6,7 @@ $(function () {
         arrows: true,
         dots: true,
         draggable: false,
-        responsive: [{
-            breakpoint: 650,
-            settings: 'unslick'
-        }]
+
     });
 
     $('.products__slider').slick({
@@ -168,10 +165,15 @@ $(function () {
 
     // adaptive
 
-    if (screen.width <= '740') {
+    if (screen.width <= '742') {
         $(".slider__item").css("background-image", "");
-    } 
+    }
 
-    $(".main-navigation__list .main-navigation__item.list").one("click", false);
-
+    let linkClicked;
+    $(".main-navigation__list .main-navigation__item").on("click", function (event) {
+        if (linkClicked !== this) {
+            linkClicked = this;
+            event.preventDefault();
+        }
+    });
 });
