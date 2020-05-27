@@ -1,4 +1,21 @@
+@media(max-width: 1650px) {
+
+   .slider {
+
+      &__item {
+         background-position: 77%;
+      }
+   }
+}
+
 @media(max-width: 1400px) {
+
+   .slider {
+
+      &__item {
+         background-position: 88%;
+      }
+   }
 
    .products {
 
@@ -27,5 +44,264 @@
          }
       }
    }
+
+}
+
+@media(max-width: 1150px) {
+
+   .slider {
+
+      &__item {
+         background-position: 113%;
+      }
+   }
+}
+
+@media(max-width: 1000px) {
+
+   .slider {
+
+      &__item {
+         background-position: 135%;
+
+      }
+   }
+}
+
+@media(max-width: 950px) {
+
+   .slider {
+
+      &__item {
+         min-height: 350px;
+         background-position: 200%;
+      }
+   }
+}
+
+@media(max-width: 930px) {
+   .main-navigation {
+      &__item-link {
+         padding-right: 5px;
+
+         &::after {
+            right: -10px;
+         }
+      }
+   }
+}
+
+@media(max-width: 900px) {
+   .main-navigation {
+      &__list {
+         padding-left: 0;
+      }
+   }
+
+   .container {
+      padding: 0 15px;
+   }
+}
+
+@media(max-width: 870px) {
+
+   .slider {
+      &__item {
+         background-position: 350%;
+      }
+   }
+
+
+
+}
+
+@media(max-width: 850px) {
+   .burger-menu {
+      display: block;
+   }
+
+   .main-navigation .main-navigation__list li {
+      display: none;
+   }
+}
+
+
+@media(max-width: 800px) {
+
+   .slider {
+
+      &__item {
+         background-position: 700%;
+      }
+
+      &__text-top {
+         font-size: 26px;
+      }
+
+      &__text-head {
+         font-size: 71px;
+         line-height: 54px;
+
+         &:before {
+            width: 285px;
+            left: 79px;
+         }
+
+         &::after {
+            width: 285px;
+            left: 79px;
+         }
+      }
+
+      &__text-subhead {
+         font-size: 26px;
+         margin-top: 10px;
+      }
+   }
+}
+
+@media(max-width: 765px) {
+   .slider {
+
+      &__item {
+         background-position: 1800%;
+      }
+
+      &__text {
+         max-width: 340px;
+      }
+
+      &__text-head {
+         &::before {
+            left: 25px;
+         }
+
+         &::after {
+            left: 25px;
+         }
+      }
+
+      .slick-dots {
+         left: 50%;
+         transform: translateX(-50%);
+      }
+   }
+}
+
+@media(max-width: 740px) {
+   .slider {
+
+      &__text {
+         margin: 0 auto;
+      }
+
+   }
+}
+
+@media(max-width: 650px) {
+   .main-slider {
+      display: none;
+   }
+}
+
+@media(max-width: 600px) {
+   .header-top {
+
+      .list::after {
+         right: 10px;
+         top: 40px;
+         border: 11px solid transparent;
+         border-top-color: #fff;
+      }
+
+      .container {
+         padding: 0;
+      }
+
+      &__panel {
+         display: block;
+      }
+
+      &__phone {
+         width: 100%;
+         text-align: center;
+         background-color: #fafafa;
+         font-size: 30px;
+         color: #838383;
+         padding: 30px 5px;
+      }
+
+      &__phone-label {}
+
+      &__phone-link {}
+
+      &__panel-right {
+         font-size: 30px;
+      }
+
+      &__currency {}
+
+      &__currency-list.open {
+         top: 90px;
+      }
+
+      &__currency-list {
+         width: 141px;
+      }
+
+      &__currency-link {
+         padding: 30px 45px 30px 25px;
+      }
+
+      &__account-link {
+         padding: 30px 45px 30px 115px;
+
+         &::before {
+            left: 70px;
+         }
+      }
+
+      &__search-link {
+         padding: 30px 20px;
+         font-size: 30px;
+      }
+   }
+
+   .main-navigation {
+      display: block;
+
+      .logo {
+         text-align: center;
+      }
+
+      .logo__img {
+         padding: 45px 5px;
+         width: 350px;
+      }
+
+      &__cart {
+         display: none;
+      }
+
+      &__list {
+         display: block;
+      }
+
+      #cart-count {
+         display: block;
+         width: 100%;
+         font-size: 30px;
+      }
+
+      &__cart-count::before {
+         left: 20px;
+         font-size: 30px;
+      }
+
+      .main-navigation__item {
+         margin-left: 0;
+      }
+   }
+
 
 }

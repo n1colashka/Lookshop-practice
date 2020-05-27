@@ -5,7 +5,11 @@ $(function () {
     $('.slider').slick({
         arrows: true,
         dots: true,
-        draggable: false
+        draggable: false,
+        responsive: [{
+            breakpoint: 650,
+            settings: 'unslick'
+        }]
     });
 
     $('.products__slider').slick({
@@ -18,21 +22,38 @@ $(function () {
         centerMode: true,
         centerPadding: '85px',
         responsive: [{
+                breakpoint: 1800,
+                settings: {
+                    slidesToShow: 6
+                }
+            },
+            {
                 breakpoint: 1400,
                 settings: {
                     slidesToShow: 5
                 }
             },
             {
-                breakpoint: 1000,
+                breakpoint: 1300,
                 settings: {
-                    slidesToShow: 4
+                    slidesToShow: 4,
+                    centerMode: false,
+
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 900,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 3,
+                    centerMode: false,
+
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
                 }
             }
         ]
@@ -115,5 +136,42 @@ $(function () {
     // wow
     new WOW().init();
 
+    // burger-menu
+
+    let menuContainer = $('.burger-menu__inner'),
+        menuList = $('.burger-menu').find('.main-navigation__list'),
+        subLists = $('.burger-menu').find('.main-navigation__sublist'),
+        menuItems = $('.burger-menu').find('.main-navigation__item-link');
+
+
+    $(menuContainer).on('click', function (event) {
+        $(menuList).slideToggle('hide');
+    });
+
+    $(menuItems).on('click', function (event) {
+        let target = event.target;
+
+        for (let i = 0; i < menuItems.length; i++) {
+            if (target && target == menuItems[i]) {
+                for (let j = 0; j < menuItems.length; j++) {
+                    if (j != i) {
+                        $(subLists[j]).hide("blind", {
+                            direction: "up"
+                        }, 500);
+                    }
+                }
+                $(subLists[i]).slideToggle('500');
+            }
+        }
+    });
+
+
+    // adaptive
+
+    if (screen.width <= '740') {
+        $(".slider__item").css("background-image", "");
+    } 
+
+    $(".main-navigation__list .main-navigation__item.list").one("click", false);
 
 });
