@@ -32,6 +32,17 @@
          background-position: 113%;
       }
    }
+
+   .brands__title {
+
+      &::before {
+         left: 57%;
+      }
+
+      &::after {
+         right: 57%;
+      }
+   }
 }
 
 @media(max-width: 1000px) {
@@ -170,9 +181,10 @@
    .clearance__item:nth-child(3n) {
       margin-right: 0;
    }
+
    .clearance__items {
       max-width: 900px;
-  }
+   }
 
 }
 
@@ -203,6 +215,19 @@
    .main-navigation {
       &__list {
          padding-left: 0;
+      }
+   }
+
+   .brands__title {
+
+      &::before {
+         left: 0;
+         width: 200px;
+      }
+
+      &::after {
+         right: 0;
+         width: 200px;
       }
    }
 
@@ -556,6 +581,19 @@
       }
    }
 
+   .brands__title {
+
+      &::before {
+         left: 0;
+         width: 100px;
+      }
+
+      &::after {
+         right: 0;
+         width: 100px;
+      }
+   }
+
 }
 
 @media(max-width: 565px) {
@@ -602,6 +640,14 @@
       &__socials-list {
          justify-content: space-around;
       }
+   }
+
+   &::before {
+      display: none;
+   }
+
+   &::after {
+      display: none;
    }
 }
 

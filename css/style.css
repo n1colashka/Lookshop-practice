@@ -2721,6 +2721,12 @@ h3 {
   .slider__item {
     background-position: 113%;
   }
+  .brands__title::before {
+    left: 57%;
+  }
+  .brands__title::after {
+    right: 57%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -2843,6 +2849,14 @@ h3 {
 @media (max-width: 900px) {
   .main-navigation__list {
     padding-left: 0;
+  }
+  .brands__title::before {
+    left: 0;
+    width: 200px;
+  }
+  .brands__title::after {
+    right: 0;
+    width: 200px;
   }
   .container {
     padding: 0 15px;
@@ -3113,6 +3127,14 @@ h3 {
   .contacts__socials-link:hover {
     background-color: #ededed;
   }
+  .brands__title::before {
+    left: 0;
+    width: 100px;
+  }
+  .brands__title::after {
+    right: 0;
+    width: 100px;
+  }
 }
 
 @media (max-width: 565px) {
@@ -3147,6 +3169,12 @@ h3 {
   .contacts__socials-list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  ::before {
+    display: none;
+  }
+  ::after {
+    display: none;
   }
 }
 

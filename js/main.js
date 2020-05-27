@@ -83,9 +83,15 @@ $(function () {
 
         responsive: {
             0: {
-                items: 3
+                items: 2
             },
-            600: {
+            400: {
+                items: 2
+            },
+            580: {
+                items: 4
+            },
+            735: {
                 items: 5
             },
             1000: {
