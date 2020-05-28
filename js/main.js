@@ -149,8 +149,6 @@ $(function () {
 
     });
 
-
-
     info.addEventListener('click', function (event) {
         let target = event.target;
 
@@ -175,7 +173,8 @@ $(function () {
     });
 
     if (screen.width <= '750') {
-        $('.products').removeClass('wow animate__animated animate__flipInX');
+        $('.products').removeClass('animate__flipInX');
+        $('.products').addClass('animate__fadeInUp');
     }
 
 
