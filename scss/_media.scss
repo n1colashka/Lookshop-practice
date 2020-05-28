@@ -305,7 +305,7 @@
    .slider {
 
       &__item {
-         background-position: 1800%;
+         background-position: 1000%;
       }
 
       &__text {
@@ -326,6 +326,13 @@
 }
 
 @media(max-width: 749px) {
+
+   .slider {
+      &__text {
+         margin: 0 auto;
+      }
+   }
+
    .hot-collections__triple-box {
       display: none;
    }
@@ -349,13 +356,7 @@
 }
 
 @media(max-width: 740px) {
-   .slider {
-
-      &__text {
-         margin: 0 auto;
-      }
-
-   }
+   
 }
 
 

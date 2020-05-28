@@ -3035,7 +3035,7 @@ h3 {
 
 @media (max-width: 765px) {
   .slider__item {
-    background-position: 1800%;
+    background-position: 1000%;
   }
   .slider__text {
     max-width: 340px;
@@ -3049,6 +3049,9 @@ h3 {
 }
 
 @media (max-width: 749px) {
+  .slider__text {
+    margin: 0 auto;
+  }
   .hot-collections__triple-box {
     display: none;
   }
@@ -3063,12 +3066,6 @@ h3 {
   }
   .clearance__item:nth-child(4n) {
     margin-right: 30px;
-  }
-}
-
-@media (max-width: 740px) {
-  .slider__text {
-    margin: 0 auto;
   }
 }
 

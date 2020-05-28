@@ -173,9 +173,43 @@ $(function () {
     });
 
     if (screen.width <= '750') {
-        $('.products').removeClass('animate__flipInX');
-        $('.products').addClass('animate__fadeInUp');
+        $('.products').removeClass('wow animate__animated animate__flipInX');
+        $('.products').attr('data-wow-offset', "");
     }
 
+
+
+    let width = screen.width,
+        height = screen.height;
+
+    setInterval(function () {
+        if (screen.width !== width || screen.height !== height) {
+            width = screen.width;
+            height = screen.height;
+            $(window).trigger('resolutionchange');
+        }
+    }, 50);
+
+    $(window).bind('resolutionchange', function () {
+
+        if (screen.width > '750') {
+            $('.slider__item').css('background-image', "url('img/slider-item-1.png')");
+        } else if (screen.width <= '750') {
+            $('.slider__item').css('background-image', '');
+        }
+
+        if (screen.width > '650') {
+            $(tab).css('display', 'block');
+        }
+
+        if (screen.width < '650') {
+            for (let i = 0; i < tab.length; i++) {
+                if (!$(tab[i]).hasClass('current')) {
+                    $(tab[i]).css('display', 'none');
+                }
+            }
+            
+        }
+    });
 
 });
