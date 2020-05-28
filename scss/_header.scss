@@ -324,7 +324,7 @@
    .main-navigation__item,
    .main-navigation__sublist-item,
    .main-navigation__extra-sublist-item {
-      font-size: 18px;
+      font-size: 20px;
       background-color: #dd6b44;
       color: #ffffff;
       border: none;
@@ -360,6 +360,7 @@
 
    .main-navigation__item-link,
    .main-navigation__sublist-link {
+      padding: 15px;
       &::after {
          display: none;
       }

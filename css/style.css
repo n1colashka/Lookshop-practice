@@ -594,7 +594,7 @@ h3 {
 .burger-menu .main-navigation__item,
 .burger-menu .main-navigation__sublist-item,
 .burger-menu .main-navigation__extra-sublist-item {
-  font-size: 18px;
+  font-size: 20px;
   background-color: #dd6b44;
   color: #ffffff;
   border: none;
@@ -630,6 +630,11 @@ h3 {
 
 .burger-menu .main-navigation__list a {
   display: block;
+}
+
+.burger-menu .main-navigation__item-link,
+.burger-menu .main-navigation__sublist-link {
+  padding: 15px;
 }
 
 .burger-menu .main-navigation__item-link::after,
@@ -1758,6 +1763,8 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-left: 0;
 }
 
@@ -1943,10 +1950,11 @@ h3 {
   font-size: 20px;
   background-color: #000;
   width: 100%;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #951b1b;
 }
 
 .footer-bottom .footer-menu__close {
+  position: relative;
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
@@ -1955,13 +1963,37 @@ h3 {
   background-color: #3d0606;
 }
 
+.footer-bottom .footer-menu__close::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 4px;
+  right: 40px;
+  top: 46%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #fff;
+}
+
+.footer-bottom .footer-menu__close::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 4px;
+  right: 40px;
+  top: 46%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #fff;
+}
+
 .footer-bottom .footer-menu .footer-menu__line-wrapper {
   bottom: 0;
   left: 0;
   position: absolute;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 75px;
 }
 
 .footer-bottom .footer-menu .footer-menu__line {
@@ -1971,9 +2003,8 @@ h3 {
   height: 4px;
   border-radius: 2px;
   background-color: #ffffff;
-  margin-right: 15px;
   bottom: 35px;
-  left: 20px;
+  left: 35px;
 }
 
 .footer-bottom .footer-menu .footer-menu__line::before {
@@ -3153,9 +3184,12 @@ h3 {
     height: 96px;
     margin-left: 2px;
   }
-  .main-navigation__cart-count::before {
-    left: 20px;
-    font-size: 30px;
+  .main-navigation__item .main-navigation__cart-count::before {
+    left: 42px;
+    font-size: 42px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .main-navigation .main-navigation__item {
     margin-left: 0;
@@ -3196,6 +3230,7 @@ h3 {
     font-size: 30px;
     padding: 25px;
     color: #9f9f9f;
+    padding-right: 104px;
   }
   .contacts__email-btn {
     border-bottom: 8px solid #dd6b44;
@@ -3219,7 +3254,7 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .contacts__socials-label {
     font-size: 26px;
@@ -3228,6 +3263,7 @@ h3 {
   }
   .contacts__socials-link {
     background-color: #f7f7f7;
+    font-size: 28px;
   }
   .contacts__socials-link:hover {
     background-color: #ededed;
@@ -3243,6 +3279,10 @@ h3 {
   .payment__caption {
     display: none;
   }
+}
+
+.hot-collections {
+  padding-top: 20px;
 }
 
 @media (max-width: 565px) {
@@ -3264,6 +3304,7 @@ h3 {
   .contacts__email-input {
     height: 76px;
     font-size: 24px;
+    padding-right: 91px;
   }
   .contacts__email-btn {
     width: 76px;
@@ -3278,17 +3319,19 @@ h3 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  ::before {
-    display: none;
-  }
-  ::after {
-    display: none;
+  .main-navigation__item .main-navigation__cart-count::before {
+    left: 24px;
   }
 }
 
 @media (max-width: 420px) {
   .hot-collections {
     display: none;
+  }
+  .contacts__socials {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
   }
 }
 
@@ -3321,10 +3364,22 @@ h3 {
   .main-navigation .logo__img {
     width: 295px;
   }
+  .contacts__email-input {
+    padding: 20px;
+  }
   .contacts__email-btn {
     position: relative;
     top: 0;
     width: 100%;
     height: 76px;
+    margin-top: 1px;
+  }
+  .brands__title::before {
+    left: 0;
+    width: 80px;
+  }
+  .brands__title::after {
+    right: 0;
+    width: 80px;
   }
 }
