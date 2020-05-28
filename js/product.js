@@ -1,10 +1,5 @@
 $(function () {
 
-    $('.header-top__currency-link.current').on('click', function () {
-        $('.header-top__currency-item').toggleClass('open');
-        $('.header-top__currency-list').toggleClass('open');
-    });
-
     $('#bar-rating').barrating({
         theme: 'bars-reversed',
         hoverState: false,
@@ -82,6 +77,4 @@ $(function () {
         counter.textContent = sum;
     });
 
-    // wow
-    new WOW().init();
 });

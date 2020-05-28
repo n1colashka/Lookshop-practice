@@ -626,6 +626,8 @@
 // clearance
 
 .clearance {
+   width: 100%;
+   overflow: hidden;
    &__sticker {
       position: relative;
       font-family: 'a Empirial', sans-serif;
@@ -714,6 +716,8 @@
 .brands {
    position: relative;
    padding-bottom: 20px;
+   width: 100%;
+   overflow: hidden;
 
    &::after {
       position: absolute;

@@ -2666,6 +2666,11 @@ h3 {
   transition: all .3s ease;
 }
 
+.clearance {
+  width: 100%;
+  overflow: hidden;
+}
+
 .clearance__sticker {
   position: relative;
   font-family: 'a Empirial', sans-serif;
@@ -2744,6 +2749,8 @@ h3 {
 .brands {
   position: relative;
   padding-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .brands::after {

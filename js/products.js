@@ -1,10 +1,5 @@
 $(function () {
 
-   $('.header-top__currency-link.current').on('click', function () {
-      $('.header-top__currency-item').toggleClass('open');
-      $('.header-top__currency-list').toggleClass('open');
-   });
-
    // clothes slider
    $('.clothes-slider__content').slick({
       arrows: true,
@@ -85,8 +80,6 @@ $(function () {
    });
 
 
-   // wow
-   new WOW().init();
 
 
 });
