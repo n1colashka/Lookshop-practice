@@ -208,7 +208,10 @@ $(function () {
                     $(tab[i]).css('display', 'none');
                 }
             }
-            
+        }
+
+        if (screen.width >= '650') {
+            $('.footer-menu__list').css('display', 'none');
         }
     });
 
