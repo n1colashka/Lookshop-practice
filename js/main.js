@@ -174,5 +174,9 @@ $(function () {
         }
     });
 
+    if (screen.width <= '750') {
+        $('.products').removeClass('wow animate__animated animate__flipInX');
+    }
+
 
 });
