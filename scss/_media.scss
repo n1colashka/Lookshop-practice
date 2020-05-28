@@ -144,12 +144,6 @@
    .triple-box-small {
       height: 127px;
       width: 180px;
-
-      &__title {}
-
-      &__content {}
-
-      &__link {}
    }
 
    .small-item--1 {
@@ -261,11 +255,6 @@
       display: none;
    }
 }
-
-@media(max-width: 820px) {
-   .user-helper__content {}
-}
-
 
 @media(max-width: 800px) {
 
