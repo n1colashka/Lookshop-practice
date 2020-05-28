@@ -1988,6 +1988,7 @@ h3 {
 }
 
 .footer-bottom .footer-menu .footer-menu__line-wrapper {
+  display: none;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -3109,7 +3110,7 @@ h3 {
     border: 12px solid transparent;
     border-top-color: #fff;
   }
-  .footer .footer-menu {
+  .footer .footer-menu .footer-menu__line-wrapper {
     display: block;
   }
   .footer .user-helper {

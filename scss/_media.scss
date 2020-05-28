@@ -409,7 +409,10 @@
    .footer {
 
       .footer-menu {
+        
+         .footer-menu__line-wrapper {
          display: block;
+      }
       }
 
       .user-helper {
@@ -423,6 +426,8 @@
       .footer-bottom__content {
          justify-content: flex-end;
       }
+
+      
    }
 
 }
