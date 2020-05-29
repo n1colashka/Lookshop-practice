@@ -513,6 +513,10 @@
             font-size: 24px;
          }
 
+         &__caption {
+            font-size: 18px;
+         }
+
          .pagination-next,
          .pagination-prev {
             font-size: 45px;
@@ -523,6 +527,24 @@
             height: 65px;
             padding: 18px;
          }
+      }
+   }
+
+}
+
+@media(max-width: 619px) {
+   .clothes {
+      .products__item {
+         margin-right: 0;
+         margin-left: 0;
+      }
+
+      .products__items {
+         max-width: 435px;
+      }
+
+      .products__item:nth-child(3n) {
+         margin-right: 0;
       }
    }
 
@@ -830,7 +852,7 @@
          background-repeat: no-repeat;
          width: 50px;
          height: 50px;
-         top: 155px;
+         top: 170px;
          right: 30px;
 
          &::before {

@@ -3317,6 +3317,9 @@ h3 {
   .clothes .pagination__item {
     font-size: 24px;
   }
+  .clothes .pagination__caption {
+    font-size: 18px;
+  }
   .clothes .pagination .pagination-next,
   .clothes .pagination .pagination-prev {
     font-size: 45px;
@@ -3325,6 +3328,19 @@ h3 {
     width: 65px;
     height: 65px;
     padding: 18px;
+  }
+}
+
+@media (max-width: 619px) {
+  .clothes .products__item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .clothes .products__items {
+    max-width: 435px;
+  }
+  .clothes .products__item:nth-child(3n) {
+    margin-right: 0;
   }
 }
 
@@ -3565,7 +3581,7 @@ h3 {
     background-repeat: no-repeat;
     width: 50px;
     height: 50px;
-    top: 155px;
+    top: 170px;
     right: 30px;
   }
   .clothes .filter-menu::before {
