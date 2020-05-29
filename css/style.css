@@ -861,6 +861,8 @@ h3 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: #79706d;
   font-size: 11px;
   line-height: 20px;
@@ -893,10 +895,6 @@ h3 {
   color: #79706d;
   list-style: none;
   padding-left: 0;
-}
-
-.breadcrumbs .icon-home3 {
-  list-style: none;
 }
 
 .breadcrumbs__item-link {
@@ -3329,6 +3327,19 @@ h3 {
     height: 65px;
     padding: 18px;
   }
+  .breadcrumbs {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .breadcrumbs__item {
+    margin-left: 10px;
+    padding-right: 7px;
+    margin-top: 5px;
+  }
+  .breadcrumbs .icon-home3 {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 619px) {
@@ -3570,10 +3581,15 @@ h3 {
     display: block;
   }
   .clothes .pagination__list {
-    margin-left: 0;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-left: 0;
+  }
+  .clothes__products.products + .pagination .pagination__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .clothes .filter-menu {
     position: absolute;
@@ -3610,6 +3626,18 @@ h3 {
   .clothes #filter__range {
     margin-bottom: 20px;
     width: 100%;
+  }
+  .breadcrumbs {
+    display: block;
+    font-size: 22px;
+    text-align: center;
+  }
+  .breadcrumbs__item-link.icon-home3 {
+    font-size: 50px;
+  }
+  .breadcrumbs__item {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 
