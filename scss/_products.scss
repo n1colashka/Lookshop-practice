@@ -676,6 +676,7 @@
    &__info {
       margin-left: 25px;
       padding-top: 13px;
+      padding-right: 10px;
    }
 
    &__back-to {
@@ -900,6 +901,7 @@
    &__social-list {
       display: flex;
       justify-content: space-between;
+      padding-left: 0;
    }
 
    &__social-item {
