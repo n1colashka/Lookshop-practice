@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="../../css/fonts.css">
    <link rel="stylesheet" href="../../css/icomoon.css">
    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="../../css/magnific-popup.css">
    <link rel="stylesheet" href="../../css/normalize.css">
    <link rel="stylesheet" href="../../css/slick.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -254,7 +255,7 @@
                   </ul>
                </li>
                <li class="main-navigation__item">
-                  <a class="main-navigation__item-link" href="products/women/clothes.html">women</a>
+                  <a class="main-navigation__item-link" href="clothes.html">women</a>
                   <ul class="main-navigation__sublist hide">
                      <li class="main-navigation__sublist-item">
                         <a class="main-navigation__sublist-link" href="#">jeans</a>
@@ -456,6 +457,8 @@
                   <div class="pagination">
                      <div class="pagination__caption">Showing 1-12 of 347 results</div>
                      <ul class="pagination__list">
+                        <li class="pagination__item pagination-prev"><a href="#"
+                           class="pagination__item-link icon-keyboard_arrow_left"></a></li>
                         <li class="pagination__item"><a href="#" class="pagination__item-link current">1</a></li>
                         <li class="pagination__item"><a href="#" class="pagination__item-link">2</a></li>
                         <li class="pagination__item"><a href="#" class="pagination__item-link">3</a></li>
@@ -601,6 +604,8 @@
                <div class="pagination">
                   <div class="pagination__caption">Showing 1-12 of 347 results</div>
                   <ul class="pagination__list">
+                     <li class="pagination__item pagination-prev"><a href="#"
+                        class="pagination__item-link icon-keyboard_arrow_left"></a></li>
                      <li class="pagination__item"><a href="#" class="pagination__item-link current">1</a></li>
                      <li class="pagination__item"><a href="#" class="pagination__item-link">2</a></li>
                      <li class="pagination__item"><a href="#" class="pagination__item-link">3</a></li>
@@ -689,9 +694,9 @@
                      </ul>
 
                      <div class="filter__range">
-                        <div id="slider-range" class="filter__range-slider"></div>
+                        <div class="filter__range-slider slider-range"></div>
                         <label for="filter-range">Price:</label>
-                        <input type="text" id="filter-range" readonly>
+                        <input type="text" class="filter-range" readonly>
                         <button class="filter__range-btn" type="submit">Filter</button>
                      </div>
 
@@ -794,12 +799,109 @@
 
                      </ul>
                   </div>
+                  <div id="filter-pop-up" class="mfp-hide white-popup-block">
+                     <div class="clothes">
+                        <div class="filter">
+                           <div class="filter__categories">
+                              <div class="filter__categories-head filter-head">Categories</div>
+                              <ul class="filter__categories-list">
+                                 <li class="filter__categories-item">
+                                    <span class="filter__categories-item-title">New</span>
+                                    <ul class="filter__categories-sublist close">
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">Shoes</a>
+                                       </li>
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">Pants</a>
+                                       </li>
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">T-shirts</a>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="filter__categories-item">
+                                    <span class="filter__categories-item-title">Designers</span>
+                                    <ul class="filter__categories-sublist close">
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">Shoes</a>
+                                       </li>
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">Pants</a>
+                                       </li>
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">T-shirts</a>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="filter__categories-item">
+                                    <span class="filter__categories-item-title">Women</span>
+                                    <ul class="filter__categories-sublist close">
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">Clothes</a>
+                                       </li>
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">Shoes</a>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="filter__categories-item">
+                                    <span class="filter__categories-item-title">Men</span>
+                                    <ul class="filter__categories-sublist close">
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">Shoes</a>
+                                       </li>
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">Pants</a>
+                                       </li>
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">T-shirts</a>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="filter__categories-item">
+                                    <span class="filter__categories-item-title">Clearance</span>
+                                    <ul class="filter__categories-sublist close">
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">Shoes</a>
+                                       </li>
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">Pants</a>
+                                       </li>
+                                       <li class="filter__categories-subitem">
+                                          <a class="filter__categories-subitem-title">T-shirts</a>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
 
+                              <div class="filter__range">
+                                 <div class="filter__range-slider slider-range"></div>
+                                 <label for="filter-range">Price:</label>
+                                 <input type="text" class="filter-range"  id="filter-range" readonly>
+                                 <button class="filter__range-btn" type="submit">Filter</button>
+                              </div>
+
+                              <div class="filter__sizes">
+                                 <div class="filter__sizes-title">Select your size</div>
+                                 <button class="filter__sizes-btn" type="submit">XS</button>
+                                 <button class="filter__sizes-btn active" type="submit">S</button>
+                                 <button class="filter__sizes-btn" type="submit">M</button>
+                                 <button class="filter__sizes-btn" type="submit">L</button>
+                                 <button class="filter__sizes-btn" type="submit">XL</button>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
+               <div class="filter-menu" href="#filter-pop-up"></div>
 
             </div>
 
          </div>
+
+      </div>
 
    </section>
 
@@ -974,13 +1076,15 @@
 
    </footer>
 
-   <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-   <script src="../../js/jquery.ui.touch-punch.min.js"></script>
-   <script src="../../js/slick.min.js"></script>
-   <script src="../../js/wow.min.js"></script>
-   <script src="../../js/global.js"></script>
-   <script src="../../js/products.js"></script>
+   <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> <script
+                  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+                  </script>
+                  <script src="../../js/jquery.ui.touch-punch.min.js"></script>
+                  <script src="../../js/jquery.magnific-popup.min.js"></script>
+                  <script src="../../js/slick.min.js"></script>
+                  <script src="../../js/wow.min.js"></script>
+                  <script src="../../js/global.js"></script>
+                  <script src="../../js/products.js"></script>
 
 
 </body>

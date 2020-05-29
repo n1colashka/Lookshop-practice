@@ -144,6 +144,7 @@
 // ? sort
 
 .clothes {
+   position: relative;
 
    &__inner {
       display: flex;
@@ -220,6 +221,15 @@
 
       }
 
+      .pagination-prev {
+         display: none;
+         font-size: 14px;
+
+         .pagination__item-link {
+            padding: 9px;
+         }
+      }
+
    }
 
    .products {
@@ -227,6 +237,11 @@
          max-width: 720px;
          margin-top: 15px;
          margin-bottom: 30px;
+
+      }
+
+      .goods__item-link::after {
+         left: 85px;
       }
 
       &__item:nth-child(3n) {
@@ -235,6 +250,7 @@
    }
 
    .filter {
+
       max-width: 230px;
       text-transform: uppercase;
       color: #727272;
@@ -500,9 +516,6 @@
          }
       }
 
-
-      &__sale {}
-
       &__featured {
 
          &-head {
@@ -510,16 +523,120 @@
          }
 
       }
-
-
-
-
-
    }
+
+   .filter-menu {
+      display: none;
+      position: sticky;
+      height: 100vh;
+      width: 100px;
+      background-color: #d7818142;
+      top: 66px;
+      right: 0;
+      cursor: pointer;
+
+      &::before {
+         content: "";
+         position: absolute;
+         background-color: #cde969;
+         right: 13px;
+         top: 50%;
+         transform: translateY(-50%);
+      }
+
+      &::after {
+         content: "Open filter here";
+         white-space: nowrap;
+         font-size: 64px;
+         position: absolute;
+         color: #ffffff;
+         right: -176px;
+         top: 50%;
+         transform: translateY(-50%);
+         transform: rotate(90deg);
+      }
+   }
+
 
 
 }
 
+#filter-pop-up {
+   background-color: #fff;
+   padding: 20px 30px;
+   max-width: 500px;
+   margin: 40px auto;
+   position: relative;
+   text-align: center;
+
+
+   .clothes {
+      .filter {
+         max-width: 100%;
+
+         &__categories {
+            width: 100%;
+            padding-top: 30px;
+         }
+
+         &__categories-head {
+            font-size: 20px;
+         }
+
+         &__categories-item {
+            font-size: 16px;
+         }
+
+         &__categories-item-title {
+            padding: 10px;
+         }
+
+         &__categories-sublist {
+            font-size: 18px;
+         }
+
+         &__categories-subitem {
+            padding: 15px;
+            background-color: rgb(226, 208, 208);
+            border-bottom: 1px solid #806a63;
+            border-left: 1px solid #806a63;
+            border-right: 1px solid #806a63;
+
+            &::before {
+               display: none;
+            }
+
+            &:first-child {
+               border-top: 1px solid #806a63;
+            }
+         }
+
+         &__range {
+            font-size: 20px;
+
+            label {
+               font-size: 16px;
+               margin-right: 10px;
+            }
+
+            &-btn {
+               padding: 15px;
+               font-size: 22px;
+               height: 60px;
+            }
+         }
+
+         .filter__sizes-title {
+            font-size: 18px;
+         }
+
+         .filter__sizes-btn {
+            width: 65px;
+            height: 65px;
+         }
+      }
+   }
+}
 
 // ? sort
 
@@ -591,8 +708,6 @@
    &__back-to-section {
       color: #fd926d;
    }
-
-   &__head {}
 
    &__name {
       font-size: 24px;
